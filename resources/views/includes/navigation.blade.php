@@ -6,7 +6,7 @@
     </button>
     <nav class="drawer-nav" role="navigation">
       <ul class="drawer-menu">
-        <li><a class="drawer-brand" href="/"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/images/logo.svg') }}" alt="Firegorilla"></a></li>
+        <li><a class="drawer-brand" href="/"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/logo.svg') }}" alt="Firegorilla"></a></li>
         <li><a class="drawer-menu-item" href="/" >Business Solutions</a></li>
         <li><a class="drawer-menu-item" href="/agency-solutions">Agency Solutions</a></li>
         <li><a class="drawer-menu-item" href="/resources">Resources</a></li>

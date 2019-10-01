@@ -35,6 +35,6 @@
 </div>
 <div class="footer-2">
   <div class="new-epoch-logo">
-    <a href="https://newepoch.com" target="_blank"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/images/new-epoch.svg') }}" alt="New Epoch"></a>
+    <a href="https://newepoch.com" target="_blank"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/new-epoch.svg') }}" alt="New Epoch"></a>
   </div>
 </div>

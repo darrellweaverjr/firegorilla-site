@@ -1,4 +1,4 @@
-@extends('layouts.frontend')
+@extends('layouts.subpages')
 
 @section('content')
 <div class="agency-header">
