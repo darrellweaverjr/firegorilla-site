@@ -1,100 +1,164 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.frontend')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+@section('content')
+<div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="attract-title">Attract Customers</div>
+          <div class="attract-txt">
+            If you're ready to attract more customers but don't know where to start with Google Ads,
+            Fire Gorilla is your end-to-end solution! Answer a few questions about your business and your competitors,
+            write one ad, and build highly performant Paid Search campaigns to target the right traffic for your business.
+            Put Fire Gorilla to work for you today and build your first set of campaigns for free!
+          </div>
+          <div class="">
+            <a class="btn btn-fg-light btn-lg" href="#">Sign Up</a>
+          </div>
         </div>
-    </body>
-</html>
+        <div class="col-md-6">
+          <div class="header-object-2"><img src="images/header-extra-info.png" alt="Firegorilla"></div>
+          <div id="header-screen-object" class="header-screen">
+            <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-1.jpg" alt="Firegorilla">
+          </div>
+          <div class="mobile-header-object">
+            <img src="https://storage.googleapis.com/fg-bucket/firegorilla-header-screen.png" alt="firegorilla">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="firegorilla-steps-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="discover-title">Discover Keywords</div>
+              <div class="steps-sub-txt">Tell us about your business</div>
+              <div class="discover-txt">
+                To get started with Fire Gorilla, enter a few keywords that people might search to find your business and enter your website. Our keyword analysis engine will discover the most relevant keywords for your campaign by analyzing your website and keywords related to the results. You decide what keywords we keep
+                and use in your campaigns.
+              </div>
+              <!-- <div class="">
+                <a class="btn btn-outline-dark" href="#">Sign Up</a>
+              </div> -->
+            </div>
+            <div class="col-md-6">
+              <div id="discover-screen-object" class="discover-screen">
+                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-1.jpg" alt="Firegorilla">
+              </div>
+              <div class="mobile-discover-object">
+                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-1.jpg" alt="Firegorilla">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+
+    <div class="firegorilla-steps-grey">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="attack-title">Attack Competitors</div>
+              <div class="steps-sub-txt">Tell us about your competitors</div>
+              <div class="discover-txt">
+                Enter your own and competitors' brand keywords so we can build special campaigns with them. Include any product names, company names, trademarks, or other phrases that are unique to your company in the "brand" section and anything unique to your competitors in the "conquesting" section. Fire Gorilla will build campaigns that safeguard your brand keywords and attack your competitors.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="attack-screen-object" class="attack-screen">
+                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-2.jpg" alt="Firegorilla">
+              </div>
+              <div class="mobile-discover-object">
+                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-2.jpg" alt="Firegorilla">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="firegorilla-steps-white-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="create-title">Create Ads</div>
+              <div class="steps-sub-txt">Give us at least one example ad</div>
+              <div class="discover-txt">
+                Before specifying your budget and targeting details, you write one general advertisement for Fire Gorilla to use as a prototype for hundreds or even thousands of ads. We utilize your keywords to make a special ad for every keyword in your brand, general, and conquesting campaigns. Fire Gorilla helps protect your brand position, drive traffic from general keywords, and attack competitors
+                like a gorilla on fire.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="create-screen-object" class="create-screen">
+                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-3.jpg" alt="Firegorilla">
+              </div>
+              <div class="mobile-discover-object">
+                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-3.jpg" alt="Firegorilla">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="resources-sect">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="lets-get-started"><b>Key Resources</b> with<br/>Fire Gorilla</div>
+          </div>
+        </div>
+        <div class="resource-examples">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://storage.googleapis.com/fg-bucket/livevegas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-outline-dark btn-block">Download</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://storage.googleapis.com/fg-bucket/livevegas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-outline-dark btn-block">Download</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="https://storage.googleapis.com/fg-bucket/livevegas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button type="button" class="btn btn-outline-dark btn-block">Download</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="footer-join">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="ready-to-start">Ready to get started?</div>
+            <div class="try-firegorilla">Try FireGorilla Now</div>
+          </div>
+          <div class="col-md-4">
+            <!-- <div class="try-btn-1">
+              <button type="button" class="btn btn-light">start free trial</button>
+            </div> -->
+            <div class="try-btn-1">
+              <a href="signup.php" class="btn btn-fg-light btn-fg-lg btn-block">start free trial</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+@endsection
