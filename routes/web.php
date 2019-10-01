@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('business-solutions');
 });
+Route::get('/agency-solutions', function () {
+    return view('agency-solutions');
+});
+Route::get('/signup', function () {
+    return view('signup');
+});
+// Route::get('/press', 'BlogController@press')->name('press');
