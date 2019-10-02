@@ -10,7 +10,7 @@
           <button type="button" class="btn btn-light">start free trial</button>
         </div> -->
         <div class="try-btn-1">
-          <a href="/signup" class="btn btn-fg-light btn-fg-lg btn-block">start free trial</a>
+          <a href="signup" class="btn btn-fg-light btn-fg-lg btn-block">start free trial</a>
         </div>
       </div>
     </div>
