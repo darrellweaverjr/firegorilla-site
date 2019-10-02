@@ -18,7 +18,7 @@
   </div>
   <div class="navigation">
     <ul>
-      <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="business-solutions" >Business Solutions</a></li>
+      <li class="{{ (request()->is('/')) ? 'active' : '' }}{{ (request()->is('business-solutions')) ? 'active' : '' }}"><a href="business-solutions" >Business Solutions</a></li>
       <li class="{{ (request()->is('agency-solutions')) ? 'active' : '' }}"><a href="agency-solutions" >Agency Solutions</a></li>
       <li class="{{ (request()->is('resources')) ? 'active' : '' }}"><a href="resources" >Resources</a></li>
     </ul>

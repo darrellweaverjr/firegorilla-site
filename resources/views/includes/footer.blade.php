@@ -9,15 +9,15 @@
       </div>
       <div class="col-md-3">
         <ul class="footer-btns">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Business Solutions</a></li>
-          <li><a href="/agency-solutions">Agency Solutions</a></li>
-          <li><a href="/contact-us">Contact Us</a></li>
+          <li><a href="business-solutions">Home</a></li>
+          <li><a href="business-solutions">Business Solutions</a></li>
+          <li><a href="agency-solutions">Agency Solutions</a></li>
+          <li><a href="contact-us">Contact Us</a></li>
         </ul>
       </div>
       <div class="col-md-3">
         <ul class="footer-btns">
-          <li><a href="/signup">Sign up</a></li>
+          <li><a href="signup">Sign up</a></li>
           <li><a href="https://firegorilla.app/login?returnUrl=%2Fprojects%2Fopen-project">Sign in</a></li>
           <li>Support</li>
           <li>Documentation</li>
@@ -25,9 +25,9 @@
       </div>
       <div class="col-md-3">
         <ul class="footer-btns">
-          <li><a href="/resources">Resources</a></li>
-          <li><a href="/terms">Terms of Service</a></li>
-          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="resources">Resources</a></li>
+          <li><a href="terms">Terms of Service</a></li>
+          <li><a href="privacy">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
