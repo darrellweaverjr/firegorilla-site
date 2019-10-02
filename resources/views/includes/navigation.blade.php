@@ -8,8 +8,8 @@
       <ul class="drawer-menu">
         <li><a class="drawer-brand" href="/"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/logo.svg') }}" alt="Firegorilla"></a></li>
         <li><a class="drawer-menu-item" href="/" >Business Solutions</a></li>
-        <li><a class="drawer-menu-item" href="/agency-solutions">Agency Solutions</a></li>
-        <li><a class="drawer-menu-item" href="/resources">Resources</a></li>
+        <li><a class="drawer-menu-item" href="agency-solutions">Agency Solutions</a></li>
+        <li><a class="drawer-menu-item" href="resources">Resources</a></li>
       </ul>
     </nav>
   </header>
@@ -19,8 +19,8 @@
   <div class="navigation">
     <ul>
       <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="/" >Business Solutions</a></li>
-      <li class="{{ (request()->is('agency-solutions')) ? 'active' : '' }}"><a href="/agency-solutions" >Agency Solutions</a></li>
-      <li class="{{ (request()->is('resources')) ? 'active' : '' }}"><a href="/resources" >Resources</a></li>
+      <li class="{{ (request()->is('agency-solutions')) ? 'active' : '' }}"><a href="agency-solutions" >Agency Solutions</a></li>
+      <li class="{{ (request()->is('resources')) ? 'active' : '' }}"><a href="resources" >Resources</a></li>
     </ul>
   </div>
   <div class="join-navi">
