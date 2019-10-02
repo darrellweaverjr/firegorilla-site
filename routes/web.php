@@ -23,4 +23,7 @@ Route::get('/signup', function () {
 Route::get('/business-solutions', function () {
     return view('business-solutions');
 });
+Route::get('/privacy-policy', function () {
+    return view('privacy');
+});
 // Route::get('/press', 'BlogController@press')->name('press');

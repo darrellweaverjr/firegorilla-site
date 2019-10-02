@@ -27,7 +27,7 @@
         <ul class="footer-btns">
           <li><a href="resources">Resources</a></li>
           <li><a href="terms">Terms of Service</a></li>
-          <li><a href="privacy">Privacy Policy</a></li>
+          <li><a href="privacy-policy">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
