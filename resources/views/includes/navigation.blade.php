@@ -5,11 +5,16 @@
       <span class="drawer-hamburger-icon"></span>
     </button>
     <nav class="drawer-nav" role="navigation">
+      <a class="drawer-brand" href="business-solutions"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/logo.svg') }}" alt="Firegorilla"></a>
       <ul class="drawer-menu">
-        <li><a class="drawer-brand" href="business-solutions"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/logo.svg') }}" alt="Firegorilla"></a></li>
-        <li><a class="drawer-menu-item" href="business-solutions" >Business Solutions</a></li>
-        <li><a class="drawer-menu-item" href="agency-solutions">Agency Solutions</a></li>
-        <li><a class="drawer-menu-item" href="resources">Resources</a></li>
+        <li class="{{ (request()->is('/')) ? 'active' : '' }}{{ (request()->is('business-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="business-solutions" >Business Solutions</a></li>
+        <li class="{{ (request()->is('agency-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="agency-solutions">Agency Solutions</a></li>
+        <li class="{{ (request()->is('resources')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="resources">Resources</a></li>
+      </ul>
+
+      <ul class="account-menu">
+        <li><a href="https://firegorilla.app/login" class="btn btn-gradient-text navi-small btn-block">Sign In</a></li>
+        <li><a href="signup" class="btn btn-gradient navi-small btn-block">Sign Up</a></li>
       </ul>
     </nav>
   </header>
