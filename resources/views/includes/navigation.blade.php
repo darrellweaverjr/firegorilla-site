@@ -7,7 +7,7 @@
     <nav class="drawer-nav" role="navigation">
       <a class="drawer-brand" href="business-solutions"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/logo.svg') }}" alt="Firegorilla"></a>
       <ul class="drawer-menu">
-        <li class="{{ (request()->is('/')) ? 'active' : '' }}{{ (request()->is('business-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="business-solutions" >Business Solutions</a></li>
+        <li class="{{ (request()->is('/')) ? 'business-solutions' : '' }}{{ (request()->is('business-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="business-solutions" >Business Solutions</a></li>
         <li class="{{ (request()->is('agency-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="agency-solutions">Agency Solutions</a></li>
         <li class="{{ (request()->is('resources')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="resources">Resources</a></li>
       </ul>
