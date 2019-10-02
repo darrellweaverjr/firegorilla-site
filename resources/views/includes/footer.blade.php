@@ -19,14 +19,14 @@
         <ul class="footer-btns">
           <li><a href="signup">Sign up</a></li>
           <li><a href="https://firegorilla.app/login?returnUrl=%2Fprojects%2Fopen-project">Sign in</a></li>
-          <li>Support</li>
-          <li>Documentation</li>
+          <li><a href="https://www.newepoch.com/contact/">Support</a></li>
+          <li><a href="#">Documentation</a></li>
         </ul>
       </div>
       <div class="col-md-3">
         <ul class="footer-btns">
           <li><a href="resources">Resources</a></li>
-          <li><a href="terms">Terms of Service</a></li>
+          <li><a href="terms-of-service">Terms of Service</a></li>
           <li><a href="privacy-policy">Privacy Policy</a></li>
         </ul>
       </div>

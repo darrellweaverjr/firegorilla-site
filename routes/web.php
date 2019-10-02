@@ -26,4 +26,10 @@ Route::get('/business-solutions', function () {
 Route::get('/privacy-policy', function () {
     return view('privacy');
 });
+Route::get('/terms-of-service', function () {
+    return view('terms');
+});
+Route::get('/resources', function () {
+    return view('resources');
+});
 // Route::get('/press', 'BlogController@press')->name('press');
