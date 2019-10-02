@@ -13,7 +13,7 @@
             Put Fire Gorilla to work for you today and build your first set of campaigns for free!
           </div>
           <div class="">
-            <a class="btn btn-fg-light btn-lg" href="/signup">Sign Up</a>
+            <a class="btn btn-fg-light btn-lg" href="signup">Sign Up</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -39,7 +39,7 @@
                 and use in your campaigns.
               </div>
               <!-- <div class="">
-                <a class="btn btn-outline-dark" href="/signup">Sign Up</a>
+                <a class="btn btn-outline-dark" href="signup">Sign Up</a>
               </div> -->
             </div>
             <div class="col-md-6">

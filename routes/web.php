@@ -20,4 +20,7 @@ Route::get('/agency-solutions', function () {
 Route::get('/signup', function () {
     return view('signup');
 });
+Route::get('/business-solutions', function () {
+    return view('business-solutions');
+});
 // Route::get('/press', 'BlogController@press')->name('press');

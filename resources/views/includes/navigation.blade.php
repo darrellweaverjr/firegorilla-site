@@ -6,8 +6,8 @@
     </button>
     <nav class="drawer-nav" role="navigation">
       <ul class="drawer-menu">
-        <li><a class="drawer-brand" href="/"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/logo.svg') }}" alt="Firegorilla"></a></li>
-        <li><a class="drawer-menu-item" href="/" >Business Solutions</a></li>
+        <li><a class="drawer-brand" href="business-solutions"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/logo.svg') }}" alt="Firegorilla"></a></li>
+        <li><a class="drawer-menu-item" href="business-solutions" >Business Solutions</a></li>
         <li><a class="drawer-menu-item" href="agency-solutions">Agency Solutions</a></li>
         <li><a class="drawer-menu-item" href="resources">Resources</a></li>
       </ul>
@@ -18,7 +18,7 @@
   </div>
   <div class="navigation">
     <ul>
-      <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="/" >Business Solutions</a></li>
+      <li class="{{ (request()->is('/')) ? 'active' : '' }}"><a href="business-solutions" >Business Solutions</a></li>
       <li class="{{ (request()->is('agency-solutions')) ? 'active' : '' }}"><a href="agency-solutions" >Agency Solutions</a></li>
       <li class="{{ (request()->is('resources')) ? 'active' : '' }}"><a href="resources" >Resources</a></li>
     </ul>
@@ -26,7 +26,7 @@
   <div class="join-navi">
     <ul>
       <li><a href="https://firegorilla.app/login" class="btn btn-gradient-text navi-small">Sign In</a></li>
-      <li><a href="/signup" class="btn btn-gradient navi-small">Sign Up</a></li>
+      <li><a href="signup" class="btn btn-gradient navi-small">Sign Up</a></li>
     </ul>
   </div>
 </div>

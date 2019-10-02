@@ -27,7 +27,7 @@
                   Donec hendrerit orci.
                 </div>
                 <div class="agency-button">
-                  <a href="/signup" class="btn btn-fg-outline btn-fg-lg">start free trial</a>
+                  <a href="signup" class="btn btn-fg-outline btn-fg-lg">start free trial</a>
                 </div>
               </div>
           </div>
@@ -39,7 +39,7 @@
                 Donec hendrerit orci.
               </div>
               <div class="agency-button">
-                <a href="/signup" class="btn btn-fg-outline btn-fg-lg">start free trial</a>
+                <a href="signup" class="btn btn-fg-outline btn-fg-lg">start free trial</a>
               </div>
             </div>
           </div>
@@ -64,11 +64,11 @@
                 <th></th>
                 <th>
                   <span class="head-title-txt">Agency<br/>Services</span>
-                  <div class="start-trial-centered"><a class="btn btn-gradient btn-fg-lg" href="/signup">start free trial</a></div>
+                  <div class="start-trial-centered"><a class="btn btn-gradient btn-fg-lg" href="signup">start free trial</a></div>
                 </th>
                 <th>
                   <span class="head-title-txt">Business<br/>Services</span>
-                  <div class="start-trial-centered"><a class="btn btn-gradient btn-fg-lg" href="/signup">start free trial</a></div>
+                  <div class="start-trial-centered"><a class="btn btn-gradient btn-fg-lg" href="signup">start free trial</a></div>
                 </th>
               </tr>
             </thead>
@@ -126,8 +126,8 @@
                 </tr>
                 <tr>
                   <td class="table-col-sect"></td>
-                  <td class="center-txt"><a class="btn btn-gradient btn-fg-lg" href="/signup">start free trial</a></td>
-                  <td class="center-txt"><a class="btn btn-gradient btn-fg-lg" href="/signup">start free trial</a></td>
+                  <td class="center-txt"><a class="btn btn-gradient btn-fg-lg" href="signup">start free trial</a></td>
+                  <td class="center-txt"><a class="btn btn-gradient btn-fg-lg" href="signup">start free trial</a></td>
                 </tr>
             </tbody>
           </table>
