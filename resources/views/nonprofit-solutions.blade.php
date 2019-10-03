@@ -5,7 +5,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="attract-title">Business Solutions</div>
+          <div class="attract-title">Nonprofit Solutions</div>
+          <div class="header-sub-txt">Create Google Ads Search campaigns for your nonprofit.</div>
           <div class="attract-txt">
             If you're ready to attract more customers but don't know where to start with Google Ads,
             Fire Gorilla is your end-to-end solution! Answer a few questions about your business and your competitors,

@@ -17,11 +17,17 @@ Route::get('/', function () {
 Route::get('/agency-solutions', function () {
     return view('agency-solutions');
 });
-Route::get('/signup', function () {
-    return view('signup');
-});
 Route::get('/business-solutions', function () {
     return view('business-solutions');
+});
+Route::get('/nonprofit-solutions', function () {
+    return view('nonprofit-solutions');
+});
+Route::get('/services', function () {
+    return view('services');
+});
+Route::get('/signup', function () {
+    return view('signup');
 });
 Route::get('/privacy-policy', function () {
     return view('privacy');

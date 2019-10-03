@@ -88,15 +88,19 @@ body{
 }
 .header{
   background-image: url(../images/header-bg.jpg);
-  /* background-size: cover; */
   min-height: 880px;
   background-position: top center;
   padding: 60px 0 0 0;
-  /* background-attachment: fixed; */
   background-color: #fff;
   background-repeat: no-repeat;
 }
-
+.header-sub-txt {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  padding: 10px 0;
+}
 .logo{
   width:180px;
   margin: 10px;
@@ -196,7 +200,10 @@ body{
 .discover-screen img{
   width:100%;
 }
-
+.btn:hover {
+  color: inherit!important;
+  text-decoration: none;
+}
 .attack-screen{
   width: 533px;
   transform: rotateX(53deg) rotateY(1deg) rotateZ(43deg);
