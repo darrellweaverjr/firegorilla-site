@@ -201,10 +201,6 @@ body{
 .discover-screen img{
   width:100%;
 }
-.btn:hover {
-  color: inherit!important;
-  text-decoration: none;
-}
 .attack-screen{
   width: 533px;
   transform: rotateX(53deg) rotateY(1deg) rotateZ(43deg);
@@ -567,11 +563,19 @@ body{
 }
 .btn-gradient{
   background: linear-gradient(115deg, rgba(222,37,118,1) 0%, rgba(255,80,48,1) 100%);
+  background-color: transparent;
   color: #fff;
   border: 0px;
   text-transform:uppercase;
   font-size: 14px;
   font-weight: bold;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-gradient:hover {
+  background: linear-gradient(115deg, rgba(255,80,48,1) 0%, rgba(255,80,48,1) 100%);
+  background-color: transparent;
+  color: #fff!important;
+  text-decoration: none;
 }
 .btn-gradient-text{
   background: -webkit-linear-gradient(#DD2476, #FF512F);
@@ -580,6 +584,17 @@ body{
   text-transform:uppercase;
   font-size: 14px;
   font-weight: bold;
+}
+.btn-pink-text{
+  color:#FF512F;
+  text-transform:uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn-pink-text:hover {
+  color:#FF512F;
+  background-color: #f7f7f7!important;
+  text-decoration: none;
 }
 .sidenav {
   height: 100%;

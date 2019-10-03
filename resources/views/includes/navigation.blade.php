@@ -15,8 +15,8 @@
       </ul>
 
       <ul class="account-menu">
-        <li><a href="https://firegorilla.app/login" class="btn btn-gradient-text navi-small btn-block">Sign In</a></li>
-        <li><a href="signup" class="btn btn-gradient navi-small btn-block">Sign Up</a></li>
+        <li><a href="https://firegorilla.app/login" class="btn-gradient-text btn navi-small btn-block">Sign In</a></li>
+        <li><a href="signup" class="btn-gradient btn navi-small btn-block">Sign Up</a></li>
       </ul>
     </nav>
   </header>
@@ -34,8 +34,8 @@
   </div>
   <div class="join-navi">
     <ul>
-      <li><a href="https://firegorilla.app/login" class="btn btn-gradient-text navi-small">Sign In</a></li>
-      <li><a href="signup" class="btn btn-gradient navi-small">Sign Up</a></li>
+      <li><a href="https://firegorilla.app/login" class="btn-pink-text btn navi-small">Sign In</a></li>
+      <li><a href="signup" class="btn-gradient navi-small">Sign Up</a></li>
     </ul>
   </div>
 </div>
