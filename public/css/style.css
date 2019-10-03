@@ -841,6 +841,16 @@ body{
   }
 }
 @media screen and (max-width: 480px) {
+  .sub-page-title {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    margin: 10px 0;
+    text-transform: uppercase;
+  }
   .discover-title {
       font-family: 'Open Sans', sans-serif;
       font-weight: bold;
