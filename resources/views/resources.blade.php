@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col">
         <!-- <div class="ready-to-start">Agency Solutions</div> -->
-        <div class="sub-page-title">Resources</div>
+        <div class="sub-page-title">Documentation and Getting Started guides for marketing in your industry vertical.</div>
       </div>
     </div>
   </div>

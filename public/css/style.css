@@ -403,14 +403,15 @@ body{
 .resource-examples{
   padding: 100px 0;
 }
-.sub-page-title{
-  font-size: 48px;
+.sub-page-title {
+  font-size: 36px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #fff;
-  line-height: 30px;
+  line-height: 36px;
   text-align: center;
   margin: 20px 0;
+  text-transform: uppercase;
 }
 .solution-box-1{
   border-radius: 10px;
