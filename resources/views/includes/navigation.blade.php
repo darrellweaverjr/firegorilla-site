@@ -9,8 +9,8 @@
       <ul class="drawer-menu">
         <li class="{{ (request()->is('/')) ? 'drawer-menu-active' : '' }}{{ (request()->is('business-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="business-solutions" >Business Solutions</a></li>
         <li class="{{ (request()->is('agency-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="agency-solutions">Agency Solutions</a></li>
-        <li class="{{ (request()->is('agency-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="agency-solutions">Agency Solutions</a></li>
-        <li class="{{ (request()->is('agency-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="agency-solutions">Agency Solutions</a></li>
+        <li class="{{ (request()->is('nonprofit-solutions')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="nonprofit-solutions">Nonprofit Solutions</a></li>
+        <li class="{{ (request()->is('services')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="services">Services</a></li>
         <li class="{{ (request()->is('resources')) ? 'drawer-menu-active' : '' }}"><a class="drawer-menu-item" href="resources">Resources</a></li>
       </ul>
 
