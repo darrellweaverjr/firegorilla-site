@@ -16,7 +16,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="lets-get-started"><b>Strategies for</b>CAMPAIGNS<br/>with Fire Gorilla</div>
+        <div class="lets-get-started"><b>Strategies for your</b><br/>CAMPAIGNS with<br/>Fire Gorilla</div>
       </div>
     </div>
     <div class="resources-projects">

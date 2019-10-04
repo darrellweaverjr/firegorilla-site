@@ -870,6 +870,9 @@ body{
   .extended-title-txt{
     line-height: 16px;
   }
+  .quick-guide-form{
+    margin: 20px 0 0 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .sub-page-title {
