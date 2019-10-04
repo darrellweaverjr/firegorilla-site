@@ -660,6 +660,37 @@ body{
   box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
 }
+.quick-guide-form{
+  background-color:#fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
+  margin:-120px 0 0 0;
+}
+.quick-guide-steps {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.quick-guide-steps ul{
+  padding:0;
+  margin:0;
+}
+.quick-guide-steps li{
+  display: block;
+  margin:20px 0 0 0;
+}
+.quick-guide-steps li:before {
+    content: url("https://storage.googleapis.com/fg-bucket/icon_firegorillacheck.svg");
+    width: 24px;
+    height: 25px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.check-colors{
+  color:#c33;
+}
 @media screen and (max-width: 768px) {
   .footer-logo {
     width: 180px;

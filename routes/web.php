@@ -38,4 +38,7 @@ Route::get('/terms-of-service', function () {
 Route::get('/resources', function () {
     return view('resources');
 });
+Route::get('/quick-guide', function () {
+    return view('quick-guide');
+});
 // Route::get('/press', 'BlogController@press')->name('press');
