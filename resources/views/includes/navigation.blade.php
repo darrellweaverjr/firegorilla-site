@@ -21,7 +21,7 @@
     </nav>
   </header>
   <div class="logo">
-    <a href="/"><img src="{{ asset('images/logo.svg') }}" alt="Firegorilla"></a>
+    <a href="/"><img src="{{ asset('https://storage.googleapis.com/fg-bucket/logo.svg') }}" alt="Firegorilla"></a>
   </div>
   <div class="navigation">
     <ul>

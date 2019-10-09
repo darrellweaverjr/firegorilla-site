@@ -10,15 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('/', 'BusinessSolutionController');
+Route::resource('/business-solutions', 'BusinessSolutionController');
 
-Route::get('/', function () {
-    return view('business-solutions');
-});
 Route::get('/agency-solutions', function () {
     return view('agency-solutions');
-});
-Route::get('/business-solutions', function () {
-    return view('business-solutions');
 });
 Route::get('/nonprofit-solutions', function () {
     return view('nonprofit-solutions');
@@ -42,3 +38,7 @@ Route::get('/quick-guide', function () {
     return view('quick-guide');
 });
 // Route::get('/press', 'BlogController@press')->name('press');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -65,7 +65,13 @@ body{
   float: left;
   padding: 15px;
 }
-
+.login-body{
+  padding: 200px 0;
+}
+.login-logo{
+  text-align: center;
+  line-height: 120px;
+}
 .active {
     background: /* gradient can be an image */ linear-gradient( to left, rgb(237, 57, 84) 0%, rgb(207, 36, 106) 100% ) left bottom no-repeat;
     background-size: 100% 5px;
@@ -93,6 +99,7 @@ body{
   padding: 60px 0 0 0;
   background-color: #fff;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .header-sub-txt {
   font-size: 18px;
@@ -349,7 +356,7 @@ body{
 }
 .footer{
   background-color:#f7f7f7;
-  padding: 40px 0;
+  padding: 100px 0;
   font-size: 13px;
 }
 .footer a{
@@ -359,8 +366,9 @@ body{
   padding:0;
   margin:0;
 }
-.footer li{
-  display: block;
+.footer li {
+    display: block;
+    margin: 0 0 20px 0;
 }
 .new-epoch-logo{
   width: 138px;
