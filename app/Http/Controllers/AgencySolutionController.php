@@ -7,6 +7,10 @@ use App\AgencySolution;
 
 class AgencySolutionController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth', ['except' => array('index')]);
+  }
   public function index()
   {
       $agencySolution = AgencySolution::all();

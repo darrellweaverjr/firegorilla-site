@@ -7,6 +7,10 @@ use App\BusinessSolution;
 
 class BusinessSolutionController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth', ['except' => array('index')]);
+  }
   public function index()
   {
       $businessSolution = BusinessSolution::all();

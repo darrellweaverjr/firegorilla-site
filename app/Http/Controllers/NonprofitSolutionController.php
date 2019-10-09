@@ -7,6 +7,10 @@ use App\NonProfitSolution;
 
 class NonprofitSolutionController extends Controller
 {
+  public function __construct()
+  {
+    $this->middleware('auth', ['except' => array('index')]);
+  }
   public function index()
   {
       $nonProfitSolution = NonProfitSolution::all();

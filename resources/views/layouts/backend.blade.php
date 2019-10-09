@@ -112,19 +112,25 @@
                           <span class="hide-menu">Pages</span>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('business-solutions.edit', 1, false) }}" aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            @if (\Request::is('2.0/*')) href="/2.0/public/{{ route('business-solutions.edit', 1, false) }}" @else href="{{ route('business-solutions.edit', 1, false) }}" @endif
+                            aria-expanded="false">
                                  <i class="icon-Bar-Chart2"></i>
                               <span class="hide-menu">Business Solutions</span>
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('agency-solutions.edit', 1, false) }}" aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            @if (\Request::is('2.0/*')) href="/2.0/public/{{ route('agency-solutions.edit', 1, false) }}" @else href="{{ route('agency-solutions.edit', 1, false) }}" @endif
+                            aria-expanded="false">
                                  <i class="icon-Bar-Chart5"></i>
                               <span class="hide-menu">Agency Solutions</span>
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('nonprofit-solutions.edit', 1, false) }}" aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                            @if (\Request::is('2.0/*')) href="/2.0/public/{{ route('nonprofit-solutions.edit', 1, false) }}" @else href="{{ route('nonprofit-solutions.edit', 1, false) }}" @endif
+                            aria-expanded="false">
                                  <i class="icon-Line-Chart3"></i>
                               <span class="hide-menu">Nonprofit Solutions</span>
                           </a>
