@@ -34,7 +34,7 @@ class BusinessSolutionController extends Controller
     $businessSolution->createTitle = $request->get('createTitle');
     $businessSolution->createSubtitle = $request->get('createSubtitle');
     $businessSolution->createBody = $request->get('createBody');
-    dd($businessSolution);
+    // dd($businessSolution);
     $businessSolution->save();
 
     return redirect('/home')->with('success', 'Business Solutions Page Has Been Updated');

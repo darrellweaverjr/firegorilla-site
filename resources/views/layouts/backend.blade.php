@@ -118,22 +118,19 @@
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-wizard.html
-                                 " aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/agency-solutions/1/edit" aria-expanded="false">
                                  <i class="icon-Bar-Chart5"></i>
                               <span class="hide-menu">Agency Solutions</span>
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-wizard.html
-                                 " aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/nonprofit-solutions/1/edit" aria-expanded="false">
                                  <i class="icon-Line-Chart3"></i>
                               <span class="hide-menu">Nonprofit Solutions</span>
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-wizard.html
-                                 " aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-wizard.html" aria-expanded="false">
                                  <i class="icon-Bar-Chart4"></i>
                               <span class="hide-menu">Services</span>
                           </a>

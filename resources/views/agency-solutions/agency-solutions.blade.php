@@ -1,17 +1,15 @@
 @extends('layouts.frontend')
 
 @section('content')
+@foreach($agencySolution as $agencySolutions)
 <div class="header">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="attract-title">Agency Solutions</div>
-          <div class="header-sub-txt">Create Google Ads Search campaigns for your clients.</div>
+          <div class="attract-title">{{$agencySolutions->headerTitle}}</div>
+          <div class="header-sub-txt">{{$agencySolutions->headerSubtitle}}</div>
           <div class="attract-txt">
-            If you're ready to attract more customers but don't know where to start with Google Ads,
-            Fire Gorilla is your end-to-end solution! Answer a few questions about your business and your competitors,
-            write one ad, and build highly performant Paid Search campaigns to target the right traffic for your business.
-            Put Fire Gorilla to work for you today and build your first set of campaigns for free!
+            {{$agencySolutions->headerBody}}
           </div>
           <div class="">
             <a class="btn btn-fg-light btn-lg" href="signup">Sign Up</a>
@@ -33,11 +31,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="discover-title">Discover Keywords</div>
-              <div class="steps-sub-txt">Tell us about your business</div>
+              <div class="discover-title">{{$agencySolutions->sectionOneTitle}}</div>
+              <div class="steps-sub-txt">{{$agencySolutions->sectionOneSubtitle}}</div>
               <div class="discover-txt">
-                To get started with Fire Gorilla, enter a few keywords that people might search to find your business and enter your website. Our keyword analysis engine will discover the most relevant keywords for your campaign by analyzing your website and keywords related to the results. You decide what keywords we keep
-                and use in your campaigns.
+                {{$agencySolutions->sectionOneBody}}
               </div>
               <!-- <div class="">
                 <a class="btn btn-outline-dark" href="signup">Sign Up</a>
@@ -62,10 +59,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="attack-title">Attack Competitors</div>
-              <div class="steps-sub-txt">Tell us about your competitors</div>
+              <div class="attack-title">{{$agencySolutions->sectionTwoTitle}}</div>
+              <div class="steps-sub-txt">{{$agencySolutions->sectionTwoSubtitle}}</div>
               <div class="discover-txt">
-                Enter your own and competitors' brand keywords so we can build special campaigns with them. Include any product names, company names, trademarks, or other phrases that are unique to your company in the "brand" section and anything unique to your competitors in the "conquesting" section. Fire Gorilla will build campaigns that safeguard your brand keywords and attack your competitors.
+                {{$agencySolutions->sectionTwoBody}}
               </div>
             </div>
             <div class="col-md-6">
@@ -83,11 +80,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="create-title">Create Ads</div>
-              <div class="steps-sub-txt">Give us at least one example ad</div>
+              <div class="create-title">{{$agencySolutions->sectionThreeTitle}}</div>
+              <div class="steps-sub-txt">{{$agencySolutions->sectionThreeSubtitle}}</div>
               <div class="discover-txt">
-                Before specifying your budget and targeting details, you write one general advertisement for Fire Gorilla to use as a prototype for hundreds or even thousands of ads. We utilize your keywords to make a special ad for every keyword in your brand, general, and conquesting campaigns. Fire Gorilla helps protect your brand position, drive traffic from general keywords, and attack competitors
-                like a gorilla on fire.
+                {{$agencySolutions->sectionThreeBody}}
               </div>
             </div>
             <div class="col-md-6">
@@ -101,6 +97,7 @@
           </div>
         </div>
     </div>
+    @endforeach
     <div class="resources-sect">
       <div class="container">
         <div class="row">

@@ -12,13 +12,9 @@
 */
 Route::resource('/', 'BusinessSolutionController');
 Route::resource('/business-solutions', 'BusinessSolutionController');
+Route::resource('/agency-solutions', 'AgencySolutionController');
+Route::resource('/nonprofit-solutions', 'NonprofitSolutionController');
 
-Route::get('/agency-solutions', function () {
-    return view('agency-solutions');
-});
-Route::get('/nonprofit-solutions', function () {
-    return view('nonprofit-solutions');
-});
 Route::get('/services', function () {
     return view('services');
 });
