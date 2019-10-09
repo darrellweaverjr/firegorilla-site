@@ -11,7 +11,7 @@
           <div class="attract-txt">
             {{$agencySolutions->headerBody}}
           </div>
-          <div class="">
+          <div>
             <a class="btn btn-fg-light btn-lg" href="signup">Sign Up</a>
           </div>
         </div>

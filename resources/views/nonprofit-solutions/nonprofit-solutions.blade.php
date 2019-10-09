@@ -1,19 +1,17 @@
 @extends('layouts.frontend')
 
 @section('content')
+@foreach($nonProfitSolution as $nonProfitSolutions)
 <div class="header">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="attract-title">Nonprofit Solutions</div>
-          <div class="header-sub-txt">Create Google Ads Search campaigns for your nonprofit.</div>
+          <div class="attract-title">{{$nonProfitSolutions->headerTitle}}</div>
+          <div class="header-sub-txt">{{$nonProfitSolutions->headerSubtitle}}</div>
           <div class="attract-txt">
-            If you're ready to attract more customers but don't know where to start with Google Ads,
-            Fire Gorilla is your end-to-end solution! Answer a few questions about your business and your competitors,
-            write one ad, and build highly performant Paid Search campaigns to target the right traffic for your business.
-            Put Fire Gorilla to work for you today and build your first set of campaigns for free!
+            {{$nonProfitSolutions->headerBody}}
           </div>
-          <div class="">
+          <div>
             <a class="btn btn-fg-light btn-lg" href="signup">Sign Up</a>
           </div>
         </div>
@@ -33,15 +31,11 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="discover-title">Discover Keywords</div>
-              <div class="steps-sub-txt">Tell us about your business</div>
+              <div class="discover-title">{{$nonProfitSolutions->sectionOneTitle}}</div>
+              <div class="steps-sub-txt">{{$nonProfitSolutions->sectionOneSubtitle}}</div>
               <div class="discover-txt">
-                To get started with Fire Gorilla, enter a few keywords that people might search to find your business and enter your website. Our keyword analysis engine will discover the most relevant keywords for your campaign by analyzing your website and keywords related to the results. You decide what keywords we keep
-                and use in your campaigns.
+                {{$nonProfitSolutions->sectionOneBody}}
               </div>
-              <!-- <div class="">
-                <a class="btn btn-outline-dark" href="signup">Sign Up</a>
-              </div> -->
             </div>
             <div class="col-md-6">
               <div id="discover-screen-object" class="discover-screen">
@@ -62,10 +56,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="attack-title">Attack Competitors</div>
-              <div class="steps-sub-txt">Tell us about your competitors</div>
+              <div class="attack-title">{{$nonProfitSolutions->sectionTwoTitle}}</div>
+              <div class="steps-sub-txt">{{$nonProfitSolutions->sectionTwoSubtitle}}</div>
               <div class="discover-txt">
-                Enter your own and competitors' brand keywords so we can build special campaigns with them. Include any product names, company names, trademarks, or other phrases that are unique to your company in the "brand" section and anything unique to your competitors in the "conquesting" section. Fire Gorilla will build campaigns that safeguard your brand keywords and attack your competitors.
+                {{$nonProfitSolutions->sectionTwoBody}}
               </div>
             </div>
             <div class="col-md-6">
@@ -83,11 +77,10 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="create-title">Create Ads</div>
-              <div class="steps-sub-txt">Give us at least one example ad</div>
+              <div class="create-title">{{$nonProfitSolutions->sectionThreeTitle}}</div>
+              <div class="steps-sub-txt">{{$nonProfitSolutions->sectionThreeSubtitle}}</div>
               <div class="discover-txt">
-                Before specifying your budget and targeting details, you write one general advertisement for Fire Gorilla to use as a prototype for hundreds or even thousands of ads. We utilize your keywords to make a special ad for every keyword in your brand, general, and conquesting campaigns. Fire Gorilla helps protect your brand position, drive traffic from general keywords, and attack competitors
-                like a gorilla on fire.
+                {{$nonProfitSolutions->sectionThreeBody}}
               </div>
             </div>
             <div class="col-md-6">
@@ -101,6 +94,7 @@
           </div>
         </div>
     </div>
+    @endforeach
     <div class="resources-sect">
       <div class="container">
         <div class="row">

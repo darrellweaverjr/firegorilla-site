@@ -112,32 +112,31 @@
                           <span class="hide-menu">Pages</span>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/business-solutions/1/edit" aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="business-solutions/1/edit" aria-expanded="false">
                                  <i class="icon-Bar-Chart2"></i>
                               <span class="hide-menu">Business Solutions</span>
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/agency-solutions/1/edit" aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="agency-solutions/1/edit" aria-expanded="false">
                                  <i class="icon-Bar-Chart5"></i>
                               <span class="hide-menu">Agency Solutions</span>
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/nonprofit-solutions/1/edit" aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="nonprofit-solutions/1/edit" aria-expanded="false">
                                  <i class="icon-Line-Chart3"></i>
                               <span class="hide-menu">Nonprofit Solutions</span>
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-wizard.html" aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="servives/1/edit" aria-expanded="false">
                                  <i class="icon-Bar-Chart4"></i>
                               <span class="hide-menu">Services</span>
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="form-wizard.html
-                                 " aria-expanded="false">
+                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="resources/1/edit" aria-expanded="false">
                                  <i class="icon-Pie-Chart"></i>
                               <span class="hide-menu">Resources</span>
                           </a>
