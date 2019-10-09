@@ -18,18 +18,51 @@ class BusinessSolutionController extends Controller
       return BusinessSolution::find($id);
   }
 
-  public function store(Request $request)
+  public function store(Request $request, $id)
   {
-      return redirect('/business-solutions/1/edit')->with('success', 'Business Solutions Page Has Been Updated');
+    $businessSolution = BusinessSolution::find($id);
+
+    $businessSolution->headerTitle = $request->get('headerTitle');
+    $businessSolution->headerSubtitle = $request->get('headerSubtitle');
+    $businessSolution->headerBody = $request->get('headerBody');
+    $businessSolution->discoverTitle = $request->get('discoverTitle');
+    $businessSolution->discoverSubtitle = $request->get('discoverSubtitle');
+    $businessSolution->discoverBody = $request->get('discoverBody');
+    $businessSolution->attackTitle = $request->get('attackTitle');
+    $businessSolution->attackSubtitle = $request->get('attackSubtitle');
+    $businessSolution->attackBody = $request->get('attackBody');
+    $businessSolution->createTitle = $request->get('createTitle');
+    $businessSolution->createSubtitle = $request->get('createSubtitle');
+    $businessSolution->createBody = $request->get('createBody');
+    dd($businessSolution);
+    $businessSolution->save();
+
+    return redirect('/home')->with('success', 'Business Solutions Page Has Been Updated');
 
   }
 
   public function update(Request $request, $id)
   {
-      $businessSolution = BusinessSolution::findOrFail($id);
-      $businessSolution->update($request->all());
+      $businessSolution = BusinessSolution::find($id);
 
-      return $businessSolution;
+      $businessSolution->headerTitle = $request->get('headerTitle');
+      $businessSolution->headerSubtitle = $request->get('headerSubtitle');
+      $businessSolution->headerBody = $request->get('headerBody');
+      $businessSolution->discoverTitle = $request->get('discoverTitle');
+      $businessSolution->discoverSubtitle = $request->get('discoverSubtitle');
+      $businessSolution->discoverBody = $request->get('discoverBody');
+      $businessSolution->attackTitle = $request->get('attackTitle');
+      $businessSolution->attackSubtitle = $request->get('attackSubtitle');
+      $businessSolution->attackBody = $request->get('attackBody');
+      $businessSolution->createTitle = $request->get('createTitle');
+      $businessSolution->createSubtitle = $request->get('createSubtitle');
+      $businessSolution->createBody = $request->get('createBody');
+      // dd($businessSolution->headerTitle);
+
+      $businessSolution->save();
+
+      return redirect('/business-solutions/1/edit')->with('success', 'Show has been updated');
+
   }
   public function edit($id)
   {
