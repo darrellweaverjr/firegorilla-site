@@ -86,7 +86,7 @@
                       <!-- Search -->
                       <!-- ============================================================== -->
                       <li class="nav-item search-box">
-                        <a class="dropdown-item" href="{{ route('login') }}">
+                        <a class="dropdown-item" href="{{ route('logout') }}">
                           <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout
                         </a>
                       </li>

@@ -14,6 +14,7 @@ Route::resource('/', 'BusinessSolutionController');
 Route::resource('/business-solutions', 'BusinessSolutionController');
 Route::resource('/agency-solutions', 'AgencySolutionController');
 Route::resource('/nonprofit-solutions', 'NonprofitSolutionController');
+Route::post('/logout', 'AuthController@logout')->name('logout');
 
 Route::get('/services', function () {
     return view('services');
