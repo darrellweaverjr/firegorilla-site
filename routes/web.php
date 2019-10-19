@@ -14,6 +14,8 @@ Route::resource('/', 'BusinessSolutionController');
 Route::resource('/business-solutions', 'BusinessSolutionController');
 Route::resource('/agency-solutions', 'AgencySolutionController');
 Route::resource('/nonprofit-solutions', 'NonprofitSolutionController');
+Route::resource('/resources', 'ResourcesController');
+Route::get('/resources/all', 'ResourcesController@allResources')->name('resources.all');
 Route::post('/logout', 'AuthController@logout')->name('logout');
 
 Route::get('/services', function () {
@@ -27,9 +29,6 @@ Route::get('/privacy-policy', function () {
 });
 Route::get('/terms-of-service', function () {
     return view('terms');
-});
-Route::get('/resources', function () {
-    return view('resources');
 });
 Route::get('/quick-guide', function () {
     return view('quick-guide');

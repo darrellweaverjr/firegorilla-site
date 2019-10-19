@@ -136,10 +136,24 @@
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                 <i class="icon-Pie-Chart"></i>
-                              <span class="hide-menu">Resources</span>
+                          <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                            <i class="icon-Pie-Chart"></i>
+                            <span class="hide-menu">Resources</span>
                           </a>
+                          <ul aria-expanded="false" class="collapse first-level">
+                            <li class="sidebar-item">
+                                <a href="index.html" class="sidebar-link">
+                                    <i class="icon-Record"></i>
+                                    <span class="hide-menu"> All Resources </span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="{{ route('resources.create') }}" class="sidebar-link">
+                                    <i class="icon-Record"></i>
+                                    <span class="hide-menu"> Add Resource </span>
+                                </a>
+                            </li>
+                          </ul>
                       </li>
 
                   </ul>
