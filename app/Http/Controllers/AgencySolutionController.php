@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\AgencySolution;
+use App\Resources;
 
 class AgencySolutionController extends Controller
 {
@@ -14,7 +15,8 @@ class AgencySolutionController extends Controller
   public function index()
   {
       $agencySolution = AgencySolution::all();
-      return view('agency-solutions/agency-solutions', compact('agencySolution'));
+      $resources = Resources::all();
+      return view('agency-solutions/agency-solutions', compact('agencySolution', 'resources'));
   }
 
   public function show($id)

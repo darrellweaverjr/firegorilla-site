@@ -52,11 +52,12 @@ class ResourcesController extends Controller
     // dd($resources);
 
     $resources->save();
-    return redirect('resources/all')->with('success', 'A New Resource Has Been Added');
+    return redirect('all/resources')->with('success', 'A New Resource Has Been Added');
   }
-  public function allResources()
+  public function allresources()
   {
       $resources = Resources::all();
+      // dd($resources);
       return view('resources.all', compact('resources'));
   }
   public function update(Request $request, $id)
@@ -66,15 +67,21 @@ class ResourcesController extends Controller
 
       return $resources;
   }
+  public function edit($id)
+  {
+      $resources = Resources::find($id);
+
+      return view('resources.edit', compact('resources'));
+  }
   public function create()
   {
     return view('resources.create');
   }
-  public function delete(Request $request, $id)
+  public function destroy(Request $request, $id)
   {
       $resources = Resources::findOrFail($id);
       $resources->delete();
 
-      return 204;
+      return view('resources.edit', compact('resources'));
   }
 }

@@ -142,7 +142,7 @@
                           </a>
                           <ul aria-expanded="false" class="collapse first-level">
                             <li class="sidebar-item">
-                                <a href="index.html" class="sidebar-link">
+                                <a href="{{ route('resources.all') }}" class="sidebar-link">
                                     <i class="icon-Record"></i>
                                     <span class="hide-menu"> All Resources </span>
                                 </a>
@@ -202,7 +202,7 @@
     <script src="{{ asset('assets/libs/raphael/raphael.min.js') }}"></script>
     <!-- <script src="{{ asset('assets/libs/morris.js/morris.min.js') }}"></script> -->
 
-    <script src="{{ asset('dist/js/pages/dashboards/dashboard1.js') }}"></script>
+    <!-- <script src="{{ asset('dist/js/pages/dashboards/dashboard1.js') }}"></script> -->
 </body>
 
 </html>

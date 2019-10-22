@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\NonProfitSolution;
+use App\Resources;
 
 class NonprofitSolutionController extends Controller
 {
@@ -14,8 +15,8 @@ class NonprofitSolutionController extends Controller
   public function index()
   {
       $nonProfitSolution = NonProfitSolution::all();
-
-      return view('nonprofit-solutions/nonprofit-solutions', compact('nonProfitSolution'));
+      $resources = Resources::all();
+      return view('nonprofit-solutions/nonprofit-solutions', compact('nonProfitSolution', 'resources'));
   }
 
   public function show($id)

@@ -25,6 +25,7 @@ body{
   margin: 0;
   display: block;
 }
+
 .navigation li{
   display: inline;
   margin: 20px 40px 0 0;
@@ -35,6 +36,9 @@ body{
   border-bottom: 1px solid #ccc;
   padding: 10px 0;
   margin: 10px 0;
+}
+.card-text{
+  min-height: 100px;
 }
 .drawer-menu-active{
   background-color:#f7f7f7;

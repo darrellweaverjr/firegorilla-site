@@ -53,46 +53,46 @@
 
 
     <div class="firegorilla-steps-grey">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="attack-title">{{$nonProfitSolutions->sectionTwoTitle}}</div>
-              <div class="steps-sub-txt">{{$nonProfitSolutions->sectionTwoSubtitle}}</div>
-              <div class="discover-txt">
-                {{$nonProfitSolutions->sectionTwoBody}}
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="attack-title">{{$nonProfitSolutions->sectionTwoTitle}}</div>
+            <div class="steps-sub-txt">{{$nonProfitSolutions->sectionTwoSubtitle}}</div>
+            <div class="discover-txt">
+              {{$nonProfitSolutions->sectionTwoBody}}
             </div>
-            <div class="col-md-6">
-              <div id="attack-screen-object" class="attack-screen">
-                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-2.jpg" alt="Firegorilla">
-              </div>
-              <div class="mobile-discover-object">
-                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-2.jpg" alt="Firegorilla">
-              </div>
+          </div>
+          <div class="col-md-6">
+            <div id="attack-screen-object" class="attack-screen">
+              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-2.jpg" alt="Firegorilla">
+            </div>
+            <div class="mobile-discover-object">
+              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-2.jpg" alt="Firegorilla">
             </div>
           </div>
         </div>
+      </div>
     </div>
     <div class="firegorilla-steps-white-2">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="create-title">{{$nonProfitSolutions->sectionThreeTitle}}</div>
-              <div class="steps-sub-txt">{{$nonProfitSolutions->sectionThreeSubtitle}}</div>
-              <div class="discover-txt">
-                {{$nonProfitSolutions->sectionThreeBody}}
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="create-title">{{$nonProfitSolutions->sectionThreeTitle}}</div>
+            <div class="steps-sub-txt">{{$nonProfitSolutions->sectionThreeSubtitle}}</div>
+            <div class="discover-txt">
+              {{$nonProfitSolutions->sectionThreeBody}}
             </div>
-            <div class="col-md-6">
-              <div id="create-screen-object" class="create-screen">
-                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-3.jpg" alt="Firegorilla">
-              </div>
-              <div class="mobile-discover-object">
-                <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-3.jpg" alt="Firegorilla">
-              </div>
+          </div>
+          <div class="col-md-6">
+            <div id="create-screen-object" class="create-screen">
+              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-3.jpg" alt="Firegorilla">
+            </div>
+            <div class="mobile-discover-object">
+              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-3.jpg" alt="Firegorilla">
             </div>
           </div>
         </div>
+      </div>
     </div>
     @endforeach
     <div class="resources-sect">
@@ -104,36 +104,18 @@
         </div>
         <div class="resource-examples">
           <div class="row">
+            @foreach($resources->slice(0,3) as $resource)
             <div class="col-md-4">
               <div class="card">
-                <img src="https://storage.googleapis.com/fg-bucket/livevegas.jpg" class="card-img-top" alt="...">
+                <img src="{{$resource->featuredImage}}" class="card-img-top" alt="{{$resource->resourcesTitle}}">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">{{$resource->resourcesTitle}}</h5>
+                  <p class="card-text">{{  Str::limit($resource->resourcesDesc, $limit = 160, $end = '...') }}.</p>
                   <a href="quick-guide" class="btn btn-outline-dark btn-block">Download</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img src="https://storage.googleapis.com/fg-bucket/livevegas.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="quick-guide" class="btn btn-outline-dark btn-block">Download</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <img src="https://storage.googleapis.com/fg-bucket/livevegas.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="quick-guide" class="btn btn-outline-dark btn-block">Download</a>
-                </div>
-              </div>
-            </div>
+            @endforeach
           </div>
         </div>
       </div>

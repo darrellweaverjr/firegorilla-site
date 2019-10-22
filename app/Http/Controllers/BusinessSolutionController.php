@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\BusinessSolution;
+use App\Resources;
 
 class BusinessSolutionController extends Controller
 {
@@ -14,7 +15,8 @@ class BusinessSolutionController extends Controller
   public function index()
   {
       $businessSolution = BusinessSolution::all();
-      return view('business-solutions/business-solutions', compact('businessSolution'));
+      $resources = Resources::all();
+      return view('business-solutions/business-solutions', compact('businessSolution', 'resources'));
   }
 
   public function show($id)
