@@ -10,16 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::resource('/', 'BusinessSolutionController');
-Route::resource('/business-solutions', 'BusinessSolutionController');
-Route::resource('/agency-solutions', 'AgencySolutionController');
-Route::resource('/nonprofit-solutions', 'NonprofitSolutionController');
-Route::resource('/resources', 'ResourcesController');
-Route::get('/all/resources', 'ResourcesController@allresources')->name('resources.all');
-Route::resource('/services', 'ServicesController');
-Route::get('/all/services', 'ServicesController@allServices')->name('services.all');
-Route::post('/logout', 'AuthController@logout')->name('logout');
-
 Route::get('/signup', function () {
     return view('signup');
 });
@@ -32,8 +22,18 @@ Route::get('/terms-of-service', function () {
 Route::get('/quick-guide', function () {
     return view('quick-guide');
 });
-// Route::get('/press', 'BlogController@press')->name('press');
-
 Auth::routes();
+Route::get('logout', 'Auth\LoginController@logout');
+Route::resource('/', 'BusinessSolutionController');
+Route::resource('/business-solutions', 'BusinessSolutionController');
+Route::resource('/agency-solutions', 'AgencySolutionController');
+Route::resource('/nonprofit-solutions', 'NonprofitSolutionController');
+Route::resource('/resources', 'ResourcesController');
+Route::get('/all/resources', 'ResourcesController@allresources')->name('resources.all');
+Route::resource('/services', 'ServicesController');
+Route::get('/all/services', 'ServicesController@allServices')->name('services.all');
+
+
+// Route::get('/press', 'BlogController@press')->name('press');
 
 Route::get('/home', 'HomeController@index')->name('home');

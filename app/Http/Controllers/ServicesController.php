@@ -12,7 +12,9 @@ class ServicesController extends Controller
   public function index()
   {
       $services = Services::all();
-      return view('services.Services', compact('Services'));
+      $agencySerices = Services::where('featuresCategory', '=', 'Agency Services')->get();
+      $businessSerices = Services::where('featuresCategory', '=', 'Business Services')->get();
+      return view('services.Services', compact('services', 'agencySerices', 'businessSerices'));
   }
 
   public function show($id)

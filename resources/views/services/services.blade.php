@@ -86,21 +86,13 @@
               </tr>
             </thead>
             <tbody>
+              @foreach($agencySerices as $agencySerice)
               <tr>
-                <td class="table-col-sect">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus justo elit, sit amet elementum elit ornare a. Duis molestie at nisi quis volutpat. Cras nec metus non tortor vulputate consequat. </td>
-                <td class="center-txt"><i class="fas fa-check"></i></td>
-                <td class="center-txt"><i class="fas fa-check"></i></td>
+                <td class="table-col-sect">{{$agencySerice->feature }}</td>
+                <td class="center-txt">@if ($agencySerice->agencyServices==1)<i class="fas fa-check"></i>@endif</td>
+                <td class="center-txt">@if ($agencySerice->businessServices==1)<i class="fas fa-check"></i>@endif</td>
               </tr>
-              <tr>
-                <td class="table-col-sect">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus justo elit, sit amet elementum elit ornare a. Duis molestie at nisi quis volutpat. Cras nec metus non tortor vulputate consequat. </td>
-                <td class="center-txt"><i class="fas fa-check"></i></td>
-                <td class="center-txt"><i class="fas fa-check"></i></td>
-              </tr>
-              <tr>
-                <td class="table-col-sect">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus justo elit, sit amet elementum elit ornare a. Duis molestie at nisi quis volutpat. Cras nec metus non tortor vulputate consequat. </td>
-                <td class="center-txt"><i class="fas fa-check"></i></td>
-                <td class="center-txt"><i class="fas fa-check"></i></td>
-              </tr>
+              @endforeach
               <thead class="table-bottom-border">
                 <tr>
                   <th class="solutions-title-txt">Business Features</th>
@@ -109,21 +101,13 @@
                 </tr>
               </thead>
               <tbody>
+                @foreach($businessSerices as $businessSerice)
                 <tr>
-                  <td class="table-col-sect">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus justo elit, sit amet elementum elit ornare a. Duis molestie at nisi quis volutpat. Cras nec metus non tortor vulputate consequat. </td>
-                  <td class="center-txt"><i class="fas fa-check"></i></td>
-                  <td class="center-txt"><i class="fas fa-check"></i></td>
+                  <td class="table-col-sect">{{$businessSerice->feature }}</td>
+                  <td class="center-txt">@if ($businessSerice->agencyServices==1)<i class="fas fa-check"></i>@endif</td>
+                  <td class="center-txt">@if ($businessSerice->businessServices==1)<i class="fas fa-check"></i>@endif</td>
                 </tr>
-                <tr>
-                  <td class="table-col-sect">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus justo elit, sit amet elementum elit ornare a. Duis molestie at nisi quis volutpat. Cras nec metus non tortor vulputate consequat. </td>
-                  <td class="center-txt"></td>
-                  <td class="center-txt"><i class="fas fa-check"></i></td>
-                </tr>
-                <tr>
-                  <td class="table-col-sect">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus justo elit, sit amet elementum elit ornare a. Duis molestie at nisi quis volutpat. Cras nec metus non tortor vulputate consequat. </td>
-                  <td class="center-txt"></td>
-                  <td class="center-txt"><i class="fas fa-check"></i></td>
-                </tr>
+                @endforeach
                 <tr>
                   <td class="table-col-sect"></td>
                   <td class="center-txt"><a class="btn btn-gradient btn-fg-lg" href="signup">start free trial</a></td>
