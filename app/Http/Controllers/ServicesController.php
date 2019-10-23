@@ -14,7 +14,7 @@ class ServicesController extends Controller
       $services = Services::all();
       $agencySerices = Services::where('featuresCategory', '=', 'Agency Services')->get();
       $businessSerices = Services::where('featuresCategory', '=', 'Business Services')->get();
-      return view('services.Services', compact('services', 'agencySerices', 'businessSerices'));
+      return view('services.services', compact('services', 'agencySerices', 'businessSerices'));
   }
 
   public function show($id)
