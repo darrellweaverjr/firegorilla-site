@@ -11,7 +11,7 @@
     <div class="page-breadcrumb">
         <div class="row">
             <div class="col-5 align-self-center">
-                <h4 class="page-title">Add Resource</h4>
+                <h4 class="page-title">Edit Resource</h4>
                 <div class="d-flex align-items-center">
 
                 </div>
@@ -23,7 +23,7 @@
                             <li class="breadcrumb-item">
                                 <a href="#">Resources</a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Add</li>
+                            <li class="breadcrumb-item active" aria-current="page">Edit</li>
                         </ol>
                     </nav>
                 </div>
@@ -36,6 +36,7 @@
         <div class="col-12">
             <div class="card">
                 <form class="form-horizontal" method="post" action="{{ route('resources.update', $resources->id) }}" enctype="multipart/form-data">
+                  @method('PATCH')
                    @csrf
                     <div class="card-body">
                       <h4 class="card-title">Resources</h4>

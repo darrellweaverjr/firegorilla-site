@@ -63,9 +63,29 @@ class ResourcesController extends Controller
   public function update(Request $request, $id)
   {
       $resources = Resources::findOrFail($id);
-      $resources->update($request->all());
 
-      return $resources;
+      if ($request->hasFile('featuredImage')) {
+        $featuredImage = $request->file('featuredImage');
+        $name = time().'.'.$featuredImage->getClientOriginalExtension();
+        $destinationPath = 'images';
+        $resources->featuredImage = $featuredImage->move($destinationPath, $name);
+        $resources->featuredImage = '/'. $destinationPath . '/'. $name;;
+      }
+
+      if ($request->hasFile('resourcesPDF')) {
+        $resourcesPDF = $request->file('resourcesPDF');
+        $name = time().'.'.$resourcesPDF->getClientOriginalExtension();
+        $destinationPath = 'pdf';
+        $resources->resourcesPDF = $resourcesPDF->move($destinationPath, $name);
+        $resources->resourcesPDF = '/'. $destinationPath . '/'. $name;;
+      }
+
+      $resources->resourcesTitle = $request->get('resourcesTitle');
+      $resources->resourcesDesc = $request->get('resourcesDesc');
+
+      $resources->save();
+
+      return redirect('/all/resources')->with('success', 'Show has been updated');
   }
   public function edit($id)
   {

@@ -16,11 +16,10 @@ Route::resource('/agency-solutions', 'AgencySolutionController');
 Route::resource('/nonprofit-solutions', 'NonprofitSolutionController');
 Route::resource('/resources', 'ResourcesController');
 Route::get('/all/resources', 'ResourcesController@allresources')->name('resources.all');
+Route::resource('/services', 'ServicesController');
+Route::get('/all/services', 'ServicesController@allServices')->name('services.all');
 Route::post('/logout', 'AuthController@logout')->name('logout');
 
-Route::get('/services', function () {
-    return view('services');
-});
 Route::get('/signup', function () {
     return view('signup');
 });

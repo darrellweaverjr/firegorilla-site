@@ -130,10 +130,24 @@
                           </a>
                       </li>
                       <li class="sidebar-item">
-                          <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#" aria-expanded="false">
-                                 <i class="icon-Bar-Chart4"></i>
+                          <a class="sidebar-link has-arrow waves-effect waves-dark sidebar-link" href="javascript:void(0)" href="#" aria-expanded="false">
+                              <i class="icon-Bar-Chart4"></i>
                               <span class="hide-menu">Services</span>
                           </a>
+                          <ul aria-expanded="false" class="collapse first-level">
+                            <li class="sidebar-item">
+                                <a href="{{ route('services.all') }}" class="sidebar-link">
+                                    <i class="icon-Record"></i>
+                                    <span class="hide-menu"> All Services </span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="{{ route('services.create') }}" class="sidebar-link">
+                                    <i class="icon-Record"></i>
+                                    <span class="hide-menu"> Add Service </span>
+                                </a>
+                            </li>
+                          </ul>
                       </li>
                       <li class="sidebar-item">
                           <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
