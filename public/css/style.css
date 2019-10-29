@@ -25,7 +25,9 @@ body{
   margin: 0;
   display: block;
 }
-
+.solutions-sect{
+  padding: 150px 0;
+}
 .navigation li{
   display: inline;
   margin: 20px 40px 0 0;
