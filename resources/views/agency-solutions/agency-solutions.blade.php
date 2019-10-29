@@ -52,7 +52,7 @@
 
     <div class="solutions-sect">
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-6">
         <div class="solutions-headline1">{{$agencySolutions->sectionTwoTitle}}</div>
         <div class="solutions-sub-txt">{{$agencySolutions->sectionTwoSubtitle}}</div>
         <div class="solutions-discover-txt">
@@ -61,7 +61,7 @@
       </div>
       <div class="col-md-6">
         <div class="solutions-pic">
-          <!-- <img src="https://storage.googleapis.com/fg-bucket/firegorilla-solution-1.png" alt="Firegorilla"> -->
+          <img src="https://storage.googleapis.com/fg-bucket/attack-competitors.png" alt="Firegorilla">
         </div>
       </div>
     </div>
