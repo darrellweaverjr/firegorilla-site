@@ -4,14 +4,14 @@
 @foreach($nonProfitSolution as $nonProfitSolutions)
 <div class="non-profit-subpage-header">
   <div class="container">
-    <div class="solutions-headerTitle">{{$nonProfitSolutions->headerTitle}}</div>
-    <div class="solutions-headerSubtitle">{{$nonProfitSolutions->headerSubtitle}}</div>
+    <div class="np-solutions-headerTitle">{{$nonProfitSolutions->headerTitle}}</div>
+    <div class="np-solutions-headerSubtitle">{{$nonProfitSolutions->headerSubtitle}}</div>
   </div>
 </div>
 
 <div class="np-solutions-subpage-header">
   <div class="container">
-    <div class="np-solutions-headerTitle">{{$nonProfitSolutions->headerBody}}</div>
+    <div class="np-solutions-headerTitle2">{{$nonProfitSolutions->headerBody}}</div>
   </div>
 </div>
 

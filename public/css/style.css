@@ -418,14 +418,12 @@ body{
   padding: 100px 0;
 }
 .sub-page-title {
-  font-size: 36px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
   color: #fff;
-  line-height: 36px;
   text-align: center;
   margin: 20px 0;
-  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 1.28125;
 }
 .solution-box-1{
   border-radius: 10px;
@@ -724,12 +722,24 @@ body{
   padding: 100px 0;
   color:#000;
 }
-.solutions-headerTitle{
+.np-solutions-headerTitle{
   font-size: 48px;
   text-align: center;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
-.np-solutions-headerTitle{
+.solutions-headerTitle{
+  font-size: 48px;
+  text-align: center;
+}
+.np-solutions-headerSubtitle{
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px;
+  max-width: 645px;
+  margin:auto;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+.np-solutions-headerTitle2{
   font-size: 24px;
   text-align: center;
   line-height: 32px;
@@ -739,7 +749,6 @@ body{
 .solutions-headerSubtitle{
   font-size: 24px;
   text-align: center;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 .solutions-body{
   background-color:#f8f8f8;
