@@ -709,16 +709,37 @@ body{
   background-color: #fff;
   padding: 100px 0;
   margin: 50px 0 0 0;
+  color:#000;
+}
+.non-profit-subpage-header {
+  background-attachment: fixed;
+  background: url('https://storage.googleapis.com/fg-bucket/nonprofit-header-1.jpg');
+  background-size: cover;
+  padding: 250px 0;
+  margin: 50px 0 0 0;
+  color:#fff;
+}
+.np-solutions-subpage-header {
+  background-color: #fff;
+  padding: 100px 0;
+  color:#000;
 }
 .solutions-headerTitle{
   font-size: 48px;
-  color:#000;
   text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+.np-solutions-headerTitle{
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px;
+  max-width: 645px;
+  margin:auto;
 }
 .solutions-headerSubtitle{
   font-size: 24px;
-  color:#000;
   text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 .solutions-body{
   background-color:#f8f8f8;
