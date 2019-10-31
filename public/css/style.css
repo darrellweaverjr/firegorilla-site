@@ -773,7 +773,21 @@ body{
 .solutions-pic img{
   width:100%;
 }
+.col-mobi{
+  display: none;
+  padding: 10px;
+}
+.col-desktop{
+  display: block;
+}
 @media screen and (max-width: 768px) {
+  .col-mobi{
+    display: block;
+    padding: 10px;
+  }
+  .col-desktop{
+    display: none;
+  }
   .footer-logo {
     width: 180px;
     margin: 10px auto;

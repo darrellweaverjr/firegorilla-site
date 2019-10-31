@@ -39,6 +39,11 @@
 
     <div class="solutions-sect">
     <div class="row">
+      <div class="col-md-6 col-mobi">
+        <div class="solutions-pic">
+          <img src="https://storage.googleapis.com/fg-bucket/nonprofit-pic2.jpg" alt="Firegorilla">
+        </div>
+      </div>
       <div class="col-md-6">
         <div class="solutions-headline1">{{$nonProfitSolutions->sectionThreeTitle}}</div>
         <div class="solutions-sub-txt">{{$nonProfitSolutions->sectionThreeSubtitle}}</div>
@@ -46,7 +51,7 @@
           {{$nonProfitSolutions->sectionThreeBody}}
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-desktop">
         <div class="solutions-pic">
           <img src="https://storage.googleapis.com/fg-bucket/nonprofit-pic2.jpg" alt="Firegorilla">
         </div>
