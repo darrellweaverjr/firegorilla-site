@@ -957,6 +957,14 @@ body{
   }
 }
 @media screen and (max-width: 480px) {
+  .non-profit-subpage-header {
+    background-attachment: fixed;
+    background: url('https://storage.googleapis.com/fg-bucket/nonprofit-mobile-header.jpg');
+    background-size: cover;
+    padding: 200px 0;
+    margin: 50px 0 0 0;
+    color:#fff;
+  }
   .sub-page-title {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
