@@ -447,6 +447,10 @@ body{
   box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
 }
+.services-sect {
+    padding: 50px 0;
+    width: 100%;
+}
 .solutions-sect{
   padding: 200px 0;
   width:100%;

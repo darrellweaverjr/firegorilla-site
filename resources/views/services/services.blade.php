@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <div class="solutions-sect">
+    <div class="services-sect">
       <div class="container">
         <div class="solutions-cta">
           <b>1,000,000+</b>
