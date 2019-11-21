@@ -389,7 +389,7 @@ body{
 }
 .agency-header{
   background: rgb(222,37,118);
-  background: linear-gradient(115deg, rgba(222,37,118,1) 0%, rgba(255,80,48,1) 100%);
+  background: linear-gradient(135deg, #8224e3 0%,#4ec8f4 100%);;
   padding: 100px 0;
   min-height: 250px;
 }
@@ -448,19 +448,19 @@ body{
   -moz-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
 }
 .solutions-sect{
-  padding: 50px 0;
+  padding: 200px 0;
   width:100%;
 }
 .solution-title{
   font-size:24px;
-  color:#e32b6c;
+  color:#333;
   text-align: center;
   width: 100%;
   margin: 20px 0 0 0;
 }
 .solution-txt{
   text-align: center;
-  padding: 20px 50px;
+  padding: 20px 50px 0;
   font-size:14px;
   line-height: 24px;
 }
@@ -501,7 +501,14 @@ body{
   font-weight: normal;
   font-size: 18px;
   padding: 15px 0!important;
-  color:#c33;
+  color:#5AA1E3;
+}
+.price-title-txt{
+  font-weight: normal;
+  font-size: 20px;
+  padding: 15px 0!important;
+  color:#666666;
+  text-align: center;
 }
 .solutions-reasons-facts ul{
   padding:0;
@@ -522,16 +529,16 @@ body{
   margin: -20px auto 0;
   box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: -2px 5px 10px rgba(0, 0, 0, 0.15);
-  background: rgb(222,37,118);
-  background: linear-gradient(115deg, rgba(222,37,118,1) 0%, rgba(255,80,48,1) 100%);
+  background-color:#5AA1E3;
+  /* background: linear-gradient(135deg, #8224e3 0%,#4ec8f4 100%); */
   color:#fff;
   font-size: 20px;
   line-height: 20px;
 }
 .btn-fg-outline {
   background-color: #fff;
-  border: 1px solid #c33!important;
-  color: #c33;
+  border: 1px solid #6974eb!important;
+  color: #5aa4f1;
   border: 0px;
   text-transform: uppercase;
   font-size: 14px;
@@ -544,7 +551,7 @@ body{
 .recommended-txt{
   text-align: center;
   padding:0!important;
-  color: #c33;
+  color: #9E9E9E;
 }
 .copyright-txt{
   float:left;
@@ -576,6 +583,16 @@ body{
 }
 .btn-gradient{
   background: linear-gradient(115deg, rgba(222,37,118,1) 0%, rgba(255,80,48,1) 100%);
+  background-color: transparent;
+  color: #fff;
+  border: 0px;
+  text-transform:uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-gradient-blue{
+  background: linear-gradient(115deg, rgb(120, 66, 230) 0%, rgb(86, 174, 241) 100%);
   background-color: transparent;
   color: #fff;
   border: 0px;
@@ -880,7 +897,7 @@ body{
   }
   .mobile-header-object, .mobile-discover-object {
     display: block;
-  }
+  } 775-684-5708
   .mobile-header-object img, .mobile-discover-object img{
     width:100%;
   }
@@ -971,6 +988,10 @@ body{
   }
 }
 @media screen and (max-width: 480px) {
+  .solutions-sect {
+    padding: 100px 0;
+    width: 100%;
+  }
   .non-profit-subpage-header {
     background-attachment: fixed;
     background: url('https://storage.googleapis.com/fg-bucket/nonprofit-mobile-header.jpg');

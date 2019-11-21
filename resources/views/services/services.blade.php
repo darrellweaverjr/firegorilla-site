@@ -21,25 +21,27 @@
         <div class="row">
           <div class="col-md-6">
             <div class="solution-box-1">
-              <div class="solution-title">Business Solutions</div>
+              <div class="solution-title">Managed Services</div>
                 <div class="solution-txt">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum tortor quis lacus consectetur pellentesque. Curabitur non erat congue, gravida mi facilisis, mattis ligula.
                   Donec hendrerit orci.
                 </div>
+                <div class="price-title-txt"><b>$495.00</b></div>
                 <div class="agency-button">
-                  <a href="signup" class="btn btn-fg-outline btn-fg-lg">start free trial</a>
+                  <a href="signup" class="btn btn-fg-outline btn-fg-lg">Get Started</a>
                 </div>
               </div>
           </div>
           <div class="col-md-6">
             <div class="solution-box-2">
-              <div class="solution-title">Agency Solutions</div>
+              <div class="solution-title">Managed Spend</div>
               <div class="solution-txt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum tortor quis lacus consectetur pellentesque. Curabitur non erat congue, gravida mi facilisis, mattis ligula.
                 Donec hendrerit orci.
               </div>
+              <div class="price-title-txt"><b>$995.00</b>/Per Month</div>
               <div class="agency-button">
-                <a href="signup" class="btn btn-fg-outline btn-fg-lg">start free trial</a>
+                <a href="signup" class="btn btn-fg-outline btn-fg-lg">Get Started</a>
               </div>
             </div>
           </div>
@@ -63,24 +65,20 @@
               <tr>
                 <th></th>
                 <th>
-                  <span class="head-title-txt">Agency<br/>Services</span>
-                  <div class="start-trial-centered"><a class="btn btn-gradient btn-fg-lg" href="signup">start free trial</a></div>
+                  <span class="head-title-txt">Managed<br/>Services</span>
+                  <div class="start-trial-centered"><a class="btn btn-gradient-blue btn-fg-lg" href="signup">Get Started</a></div>
+                  <div class="price-title-txt"><b>$495.00</b></div>
                 </th>
                 <th>
-                  <span class="head-title-txt">Business<br/>Services</span>
-                  <div class="start-trial-centered"><a class="btn btn-gradient btn-fg-lg" href="signup">start free trial</a></div>
+                  <span class="head-title-txt">Managed<br/>Spend</span>
+                  <div class="start-trial-centered"><a class="btn btn-gradient-blue btn-fg-lg" href="signup">Get Started</a></div>
+                  <div class="price-title-txt"><b>$995.00</b>/Per Month</div>
                 </th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td class="extended-title-txt">Extended payment options available.</td>
-              <tr>
-            </tbody>
             <thead class="table-bottom-border">
               <tr>
-                <th class="solutions-title-txt">Agency Features</th>
+                <th class="solutions-title-txt">Managed Services</th>
                 <th></th>
                 <th></th>
               </tr>
@@ -95,7 +93,7 @@
               @endforeach
               <thead class="table-bottom-border">
                 <tr>
-                  <th class="solutions-title-txt">Business Features</th>
+                  <th class="solutions-title-txt">Managed Spend</th>
                   <th></th>
                   <th></th>
                 </tr>
@@ -110,8 +108,8 @@
                 @endforeach
                 <tr>
                   <td class="table-col-sect"></td>
-                  <td class="center-txt"><a class="btn btn-gradient btn-fg-lg" href="signup">start free trial</a></td>
-                  <td class="center-txt"><a class="btn btn-gradient btn-fg-lg" href="signup">start free trial</a></td>
+                  <td class="center-txt"><a class="btn btn-gradient-blue btn-fg-lg" href="signup">Get Started</a></td>
+                  <td class="center-txt"><a class="btn btn-gradient-blue btn-fg-lg" href="signup">Get Started</a></td>
                 </tr>
             </tbody>
           </table>
