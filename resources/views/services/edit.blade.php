@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col-12">
             <div class="card">
-                <form class="form-horizontal" method="post" action="{{ route('services.update', $services->id) }}" enctype="multipart/form-data">
+                <form class="form-horizontal" method="post" action="{{ route('services.update', $servicesPage->id) }}" enctype="multipart/form-data">
                   @method('PATCH')
                    @csrf
                     <div class="card-body">

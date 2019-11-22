@@ -31,6 +31,7 @@ Route::resource('/nonprofit-solutions', 'NonprofitSolutionController');
 Route::resource('/resources', 'ResourcesController');
 Route::get('/all/resources', 'ResourcesController@allresources')->name('resources.all');
 Route::resource('/services', 'ServicesController');
+Route::resource('/servicespage', 'ServicesPageController');
 Route::get('/all/services', 'ServicesController@allServices')->name('services.all');
 
 

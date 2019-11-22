@@ -147,6 +147,12 @@
                                     <span class="hide-menu"> Add Service </span>
                                 </a>
                             </li>
+                            <li class="sidebar-item">
+                                <a href="/servicespage/1/edit" class="sidebar-link">
+                                    <i class="icon-Record"></i>
+                                    <span class="hide-menu"> Edit Services Page </span>
+                                </a>
+                            </li>
                           </ul>
                       </li>
                       <li class="sidebar-item">

@@ -1,12 +1,13 @@
 @extends('layouts.subpages')
 
 @section('content')
+  @foreach($servicesPage as $servicesPages)
     <div class="agency-header">
       <div class="container">
         <div class="row">
           <div class="col">
             <!-- <div class="ready-to-start">Agency Solutions</div> -->
-            <div class="sub-page-title">Jumpstart and full-service campaign management by our Google Ads pros.</div>
+            <div class="sub-page-title">{{$servicesPages->pageTitle}}</div>
           </div>
         </div>
       </div>
@@ -21,35 +22,29 @@
         <div class="row">
           <div class="col-md-6">
             <div class="solution-box-1">
-              <div class="solution-title">Managed Services</div>
-                <div class="solution-txt">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum tortor quis lacus consectetur pellentesque. Curabitur non erat congue, gravida mi facilisis, mattis ligula.
-                  Donec hendrerit orci.
-                </div>
-                <div class="price-title-txt"><b>$495.00</b></div>
-                <div class="agency-button">
-                  <a href="signup" class="btn btn-fg-outline btn-fg-lg">Get Started</a>
-                </div>
+              <div class="solution-title">{{$servicesPages->serivces_title}}</div>
+              <div class="solution-txt">{{$servicesPages->serivces_desc}}</div>
+              <div class="price-title-txt"><b>${{$servicesPages->serivce_price}}.00</b></div>
+              <div class="agency-button">
+                <a href="signup" class="btn btn-fg-outline btn-fg-lg">Get Started</a>
               </div>
+            </div>
           </div>
           <div class="col-md-6">
             <div class="solution-box-2">
-              <div class="solution-title">Managed Spend</div>
-              <div class="solution-txt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum tortor quis lacus consectetur pellentesque. Curabitur non erat congue, gravida mi facilisis, mattis ligula.
-                Donec hendrerit orci.
-              </div>
-              <div class="price-title-txt"><b>$995.00</b>/Per Month</div>
+              <div class="solution-title">{{$servicesPages->spend_title}}</div>
+              <div class="solution-txt">{{$servicesPages->spend_desc}}</div>
+              <div class="price-title-txt"><b>${{$servicesPages->spend_price}}.00</b></div>
               <div class="agency-button">
                 <a href="signup" class="btn btn-fg-outline btn-fg-lg">Get Started</a>
               </div>
             </div>
           </div>
         </div>
+        @endforeach
 
         <div class="whats-right-txt">
-          <h1>Three easy ways to discover you.</h1>
-          <h2>Choose what's right for you.</h2>
+          <h1>{!!$servicesPages->pageCTA!!}</h1>
         </div>
 
         <div class="agency-tables">
@@ -84,11 +79,11 @@
               </tr>
             </thead>
             <tbody>
-              @foreach($agencySerices as $agencySerice)
+              @foreach($agencyServices as $agencyServices)
               <tr>
-                <td class="table-col-sect">{{$agencySerice->feature }}</td>
-                <td class="center-txt">@if ($agencySerice->agencyServices==1)<i class="fas fa-check"></i>@endif</td>
-                <td class="center-txt">@if ($agencySerice->businessServices==1)<i class="fas fa-check"></i>@endif</td>
+                <td class="table-col-sect">{{$agencyServices->feature }}</td>
+                <td class="center-txt">@if ($agencyServices->agencyServices==1)<i class="fas fa-check"></i>@endif</td>
+                <td class="center-txt">@if ($agencyServices->businessServices==1)<i class="fas fa-check"></i>@endif</td>
               </tr>
               @endforeach
               <thead class="table-bottom-border">
@@ -99,11 +94,11 @@
                 </tr>
               </thead>
               <tbody>
-                @foreach($businessSerices as $businessSerice)
+                @foreach($businessServices as $businessServices)
                 <tr>
-                  <td class="table-col-sect">{{$businessSerice->feature }}</td>
-                  <td class="center-txt">@if ($businessSerice->agencyServices==1)<i class="fas fa-check"></i>@endif</td>
-                  <td class="center-txt">@if ($businessSerice->businessServices==1)<i class="fas fa-check"></i>@endif</td>
+                  <td class="table-col-sect">{{$businessServices->feature }}</td>
+                  <td class="center-txt">@if ($businessServices->agencyServices==1)<i class="fas fa-check"></i>@endif</td>
+                  <td class="center-txt">@if ($businessServices->businessServices==1)<i class="fas fa-check"></i>@endif</td>
                 </tr>
                 @endforeach
                 <tr>

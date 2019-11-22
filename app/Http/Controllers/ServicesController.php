@@ -3,23 +3,30 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use App\Services;
+use App\ServicesPage;
 
 class ServicesController extends Controller
 {
   public function index()
   {
       $services = Services::all();
-      $agencySerices = Services::where('featuresCategory', '=', 'Agency Services')->get();
-      $businessSerices = Services::where('featuresCategory', '=', 'Business Services')->get();
-      return view('services.services', compact('services', 'agencySerices', 'businessSerices'));
+      $servicesPage = ServicesPage::all();
+      // dd($servicesPage);
+
+      $agencyServices = Services::where('featuresCategory', '=', 'Agency Services')->get();
+      $businessServices = Services::where('featuresCategory', '=', 'Business Services')->get();
+      return view('services.services', compact('services', 'servicesPage', 'agencyServices', 'businessServices'));
   }
 
   public function show($id)
   {
-      return Services::find($id);
+      $services = Services::all();
+      $servicesPage = ServicesPage::all();
+      return view('services.services', compact('services','servicesPage'));
   }
 
   public function store(Request $request)
@@ -71,8 +78,7 @@ class ServicesController extends Controller
   public function edit($id)
   {
       $services = Services::find($id);
-
-      return view('services.edit', compact('services'));
+      return view('services.edit', compact('services', 'servicesPage'));
   }
   public function create()
   {
