@@ -23,7 +23,7 @@
       </div>
       <div class="col-md-6">
         <div class="solutions-pic">
-          <img src="https://storage.googleapis.com/fg-bucket/keywords.png" alt="Firegorilla">
+          <img src="{{$agencySolutions->sectionOneIMG}}" alt="Firegorilla">
         </div>
       </div>
     </div>
@@ -35,14 +35,14 @@
     <div class="row">
       <div class="col-md-7">
         <div class="solutions-pic">
-          <img src="https://storage.googleapis.com/fg-bucket/ads.png" alt="Firegorilla">
+          <img src="{{$agencySolutions->sectionTwoIMG}}" alt="Firegorilla">
         </div>
       </div>
       <div class="col-md-5">
-        <div class="solutions-headline1">{{$agencySolutions->sectionThreeTitle}}</div>
-        <div class="solutions-sub-txt">{{$agencySolutions->sectionThreeSubtitle}}</div>
+        <div class="solutions-headline1">{{$agencySolutions->sectionTwoTitle}}</div>
+        <div class="solutions-sub-txt">{{$agencySolutions->sectionTwoSubtitle}}</div>
         <div class="solutions-discover-txt">
-          {{$agencySolutions->sectionThreeBody}}
+          {{$agencySolutions->sectionTwoBody}}
         </div>
       </div>
     </div>
@@ -53,15 +53,15 @@
     <div class="solutions-sect">
     <div class="row">
       <div class="col-md-6">
-        <div class="solutions-headline1">{{$agencySolutions->sectionTwoTitle}}</div>
-        <div class="solutions-sub-txt">{{$agencySolutions->sectionTwoSubtitle}}</div>
+        <div class="solutions-headline1">{{$agencySolutions->sectionThreeTitle}}</div>
+        <div class="solutions-sub-txt">{{$agencySolutions->sectionThreeSubtitle}}</div>
         <div class="solutions-discover-txt">
-          {{$agencySolutions->sectionTwoBody}}
+          {{$agencySolutions->sectionThreeBody}}
         </div>
       </div>
       <div class="col-md-6">
         <div class="solutions-pic">
-          <img src="https://storage.googleapis.com/fg-bucket/attack-competitors.png" alt="Firegorilla">
+          <img src="{{$agencySolutions->sectionThreeIMG}}" alt="Firegorilla">
         </div>
       </div>
     </div>

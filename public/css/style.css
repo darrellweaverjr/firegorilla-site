@@ -732,7 +732,6 @@ body{
 }
 .non-profit-subpage-header {
   background-attachment: fixed;
-  background: url('https://storage.googleapis.com/fg-bucket/nonprofit-header-1.jpg');
   background-size: cover;
   padding: 250px 0;
   margin: 50px 0 0 0;
