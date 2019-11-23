@@ -55,12 +55,14 @@ class NonprofitSolutionController extends Controller
         $headerIMG = $request->file('headerIMG');
         $headerIMGname = time().'-'.$headerIMG->getClientOriginalName();
         $destinationPath = 'images';
-        $nonProfitSolution->$headerIMG = $headerIMG->move($destinationPath, $headerIMGname);
-        $nonProfitSolution->$headerIMG = '/'. $destinationPath . '/'. $headerIMGname;
+        $nonProfitSolution->headerIMG = $headerIMG->move($destinationPath, $headerIMGname);
+        $nonProfitSolution->headerIMG = '/'. $destinationPath . '/'. $headerIMGname;
       }
+
       $nonProfitSolution->headerTitle = $request->get('headerTitle');
       $nonProfitSolution->headerSubtitle = $request->get('headerSubtitle');
       $nonProfitSolution->headerBody = $request->get('headerBody');
+
       if ($request->hasFile('sectionOneIMG')) {
         $sectionOneIMG = $request->file('sectionOneIMG');
         $sectionOneIMGname = time().'-'.$sectionOneIMG->getClientOriginalName();
@@ -71,6 +73,7 @@ class NonprofitSolutionController extends Controller
       $nonProfitSolution->sectionOneTitle = $request->get('sectionOneTitle');
       $nonProfitSolution->sectionOneSubtitle = $request->get('sectionOneSubtitle');
       $nonProfitSolution->sectionOneBody = $request->get('sectionOneBody');
+
       if ($request->hasFile('sectionTwoIMG')) {
         $sectionTwoIMG = $request->file('sectionTwoIMG');
         $sectionTwoName = time().'-'.$sectionTwoIMG->getClientOriginalName();
@@ -81,6 +84,7 @@ class NonprofitSolutionController extends Controller
       $nonProfitSolution->sectionTwoTitle = $request->get('sectionTwoTitle');
       $nonProfitSolution->sectionTwoSubtitle = $request->get('sectionTwoSubtitle');
       $nonProfitSolution->sectionTwoBody = $request->get('sectionTwoBody');
+
       if ($request->hasFile('sectionThreeIMG')) {
         $sectionThreeIMG = $request->file('sectionThreeIMG');
         $sectionThreeIMGname = time().'-'.$sectionThreeIMG->getClientOriginalName();
