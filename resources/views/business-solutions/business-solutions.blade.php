@@ -43,10 +43,10 @@
           </div>
           <div class="col-md-6">
             <div id="discover-screen-object" class="discover-screen">
-              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-1.jpg" alt="Firegorilla">
+              <img src="{{$businessSolutions->sectionOneIMG}}" alt="Firegorilla">
             </div>
             <div class="mobile-discover-object">
-              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-1.jpg" alt="Firegorilla">
+              <img src="{{$businessSolutions->sectionOneIMG}}" alt="Firegorilla">
             </div>
           </div>
         </div>
@@ -68,10 +68,10 @@
           </div>
           <div class="col-md-6">
             <div id="attack-screen-object" class="attack-screen">
-              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-2.jpg" alt="Firegorilla">
+              <img src="{{$businessSolutions->sectionTwoIMG}}" alt="Firegorilla">
             </div>
             <div class="mobile-discover-object">
-              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-2.jpg" alt="Firegorilla">
+              <img src="{{$businessSolutions->sectionTwoIMG}}" alt="Firegorilla">
             </div>
           </div>
         </div>
@@ -90,10 +90,10 @@
           </div>
           <div class="col-md-6">
             <div id="create-screen-object" class="create-screen">
-              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-3.jpg" alt="Firegorilla">
+              <img src="{{$businessSolutions->sectionThreeIMG}}" alt="Firegorilla">
             </div>
             <div class="mobile-discover-object">
-              <img src="https://storage.googleapis.com/fg-bucket/firegorilla-screen-3.jpg" alt="Firegorilla">
+              <img src="{{$businessSolutions->sectionThreeIMG}}" alt="Firegorilla">
             </div>
           </div>
         </div>

@@ -163,7 +163,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                  <button type="submit" class="btn btn-danger">Update</button>
+                  <button type="submit" class="btn btn-success">Update</button>
                 </div>
             </form>
         </div>

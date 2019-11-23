@@ -54,12 +54,39 @@ class BusinessSolutionController extends Controller
       $businessSolution->headerTitle = $request->get('headerTitle');
       $businessSolution->headerSubtitle = $request->get('headerSubtitle');
       $businessSolution->headerBody = $request->get('headerBody');
+      if ($request->hasFile('sectionOneIMG')) {
+        $sectionOneIMG = $request->file('sectionOneIMG');
+        $name = time().'.'.$sectionOneIMG->getClientOriginalExtension();
+        $destinationPath = 'images';
+        $businessSolution->sectionOneIMG = $sectionOneIMG->move($destinationPath, $name);
+        $businessSolution->sectionOneIMG = '/'. $destinationPath . '/'. $name;;
+      }else {
+        $businessSolution->sectionOneIMG  = "none";
+      }
       $businessSolution->discoverTitle = $request->get('discoverTitle');
       $businessSolution->discoverSubtitle = $request->get('discoverSubtitle');
       $businessSolution->discoverBody = $request->get('discoverBody');
+      if ($request->hasFile('sectionTwoIMG')) {
+        $sectionTwoIMG = $request->file('sectionTwoIMG');
+        $name = time().'.'.$sectionTwoIMG->getClientOriginalExtension();
+        $destinationPath = 'images';
+        $businessSolution->sectionTwoIMG = $sectionTwoIMG->move($destinationPath, $name);
+        $businessSolution->sectionTwoIMG = '/'. $destinationPath . '/'. $name;;
+      }else {
+        $businessSolution->sectionTwoIMG  = "none";
+      }
       $businessSolution->attackTitle = $request->get('attackTitle');
       $businessSolution->attackSubtitle = $request->get('attackSubtitle');
       $businessSolution->attackBody = $request->get('attackBody');
+      if ($request->hasFile('sectionThreeIMG')) {
+        $sectionThreeIMG = $request->file('sectionThreeIMG');
+        $name = time().'.'.$sectionThreeIMG->getClientOriginalExtension();
+        $destinationPath = 'images';
+        $businessSolution->sectionThreeIMG = $sectionThreeIMG->move($destinationPath, $name);
+        $businessSolution->sectionThreeIMG = '/'. $destinationPath . '/'. $name;;
+      }else {
+        $businessSolution->sectionThreeIMG  = "none";
+      }
       $businessSolution->createTitle = $request->get('createTitle');
       $businessSolution->createSubtitle = $request->get('createSubtitle');
       $businessSolution->createBody = $request->get('createBody');
