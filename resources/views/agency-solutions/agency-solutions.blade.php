@@ -2,10 +2,10 @@
 
 @section('content')
 @foreach($agencySolution as $agencySolutions)
-<div class="solutions-subpage-header">
+<div class="non-profit-subpage-header" style="background: url('{{$agencySolutions->headerIMG}}'); ; background-attachment: fixed;background-size: cover; background-position:bottom center;">
   <div class="container">
-    <div class="solutions-headerTitle">{{$agencySolutions->headerTitle}}</div>
-    <div class="solutions-headerSubtitle">{{$agencySolutions->headerSubtitle}}</div>
+    <div class="np-solutions-headerTitle">{{$agencySolutions->headerTitle}}</div>
+    <div class="np-solutions-headerSubtitle">{{$agencySolutions->headerSubtitle}}</div>
   </div>
 </div>
 

@@ -78,6 +78,14 @@ class AgencySolutionController extends Controller
   {
       $agencySolution = AgencySolution::find($id);
 
+      if ($request->hasFile('headerIMG')) {
+        $headerIMG = $request->file('headerIMG');
+        $headerIMGname = time().'-'.$headerIMG->getClientOriginalName();
+        $destinationPath = 'images';
+        $agencySolution->headerIMG = $headerIMG->move($destinationPath, $headerIMGname);
+        $agencySolution->headerIMG = '/'. $destinationPath . '/'. $headerIMGname;
+      }
+
       $agencySolution->headerTitle = $request->get('headerTitle');
       $agencySolution->headerSubtitle = $request->get('headerSubtitle');
       $agencySolution->headerBody = $request->get('headerBody');

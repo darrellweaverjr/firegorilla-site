@@ -1005,9 +1005,16 @@ body{
     margin: 50px 0 0 0;
     color:#fff;
   }
+  .np-solutions-headerTitle {
+    font-size: 48px;
+    text-align: center;
+    line-height: 48px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+    margin: 0 0 20px 0;
+  }
   .sub-page-title {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 28px;
   }
   .discover-title {
       font-family: 'Open Sans', sans-serif;
