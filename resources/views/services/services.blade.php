@@ -2,7 +2,7 @@
 
 @section('content')
   @foreach($servicesPage as $servicesPages)
-    <div class="agency-header">
+    <div class="agency-header"  style="background: url('{{$servicesPages->headerIMG}}');">
       <div class="container">
         <div class="row">
           <div class="col">

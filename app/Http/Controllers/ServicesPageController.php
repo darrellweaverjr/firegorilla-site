@@ -24,17 +24,25 @@ class ServicesPageController extends Controller
   }
   public function update(Request $request, $id)
   {
-      $servicesPage = ServicesPage::findOrFail($id);
-      $servicesPage->pageTitle = $request->get('pageTitle');
-      $servicesPage->serivces_title = $request->get('serivces_title');
-      $servicesPage->serivces_desc = $request->get('serivces_desc');
-      $servicesPage->serivce_price = $request->get('serivce_price');
-      $servicesPage->spend_title = $request->get('spend_title');
-      $servicesPage->spend_desc = $request->get('spend_desc');
-      $servicesPage->spend_price = $request->get('spend_price');
-      $servicesPage->pageCTA = $request->get('pageCTA');
-      $servicesPage->update($request->all());
-      return redirect('/servicespage/1/edit')->with('success', 'A Service Has Been Updated');
+    $servicesPage = ServicesPage::findOrFail($id);
+
+    if ($request->hasFile('headerIMG')) {
+      $headerIMG = $request->file('headerIMG');
+      $headerIMGname = time().'-'.$headerIMG->getClientOriginalName();
+      $destinationPath = 'images';
+      $servicesPage->headerIMG = $headerIMG->move($destinationPath, $headerIMGname);
+      $servicesPage->headerIMG = '/'. $destinationPath . '/'. $headerIMGname;
+    }
+    $servicesPage->pageTitle = $request->get('pageTitle');
+    $servicesPage->serivces_title = $request->get('serivces_title');
+    $servicesPage->serivces_desc = $request->get('serivces_desc');
+    $servicesPage->serivce_price = $request->get('serivce_price');
+    $servicesPage->spend_title = $request->get('spend_title');
+    $servicesPage->spend_desc = $request->get('spend_desc');
+    $servicesPage->spend_price = $request->get('spend_price');
+    $servicesPage->pageCTA = $request->get('pageCTA');
+    $servicesPage->update($request->all());
+    return redirect('/servicespage/1/edit')->with('success', 'A Service Has Been Updated');
   }
   public function edit($id)
   {

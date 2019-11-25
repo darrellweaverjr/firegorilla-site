@@ -40,6 +40,18 @@
                     <div class="card-body">
                       <h4 class="card-title">Services</h4>
                         <div class="form-group row">
+                          <label for="lname" class="col-sm-3 text-right control-label col-form-label">Background Image (1920px x 800px)</label>
+                          <div class="input-group col-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Upload</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" name="headerIMG" id="headerIMG">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group row">
                             <label for="pageTitle" class="col-sm-3 text-right control-label col-form-label">Header Title</label>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="pageTitle" id="pageTitle">

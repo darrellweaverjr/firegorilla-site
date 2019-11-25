@@ -11,6 +11,7 @@ class ServicesPage extends Model
     return $this->belongsTo(Services::class);
   }
   protected $fillable = [
+    'headerIMG',
     'pageTitle',
     'serivces_title',
     'serivces_desc',
