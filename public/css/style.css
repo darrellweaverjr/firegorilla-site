@@ -392,6 +392,7 @@ body{
   background-size: cover;
   padding: 250px 0;
   min-height: 250px;
+  margin: 50px 0 0 0;
 }
 .resources-header{
   background: rgb(222,37,118);
@@ -424,6 +425,7 @@ body{
   margin: 20px 0;
   font-size: 32px;
   line-height: 1.28125;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
 }
 .solution-box-1{
   border-radius: 10px;

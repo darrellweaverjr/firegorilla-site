@@ -41,7 +41,8 @@ class ServicesPageController extends Controller
     $servicesPage->spend_desc = $request->get('spend_desc');
     $servicesPage->spend_price = $request->get('spend_price');
     $servicesPage->pageCTA = $request->get('pageCTA');
-    $servicesPage->update($request->all());
+    // dd($servicesPage);
+    $servicesPage->save();
     return redirect('/servicespage/1/edit')->with('success', 'A Service Has Been Updated');
   }
   public function edit($id)
