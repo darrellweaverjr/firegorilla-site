@@ -31,43 +31,42 @@ class AgencySolutionController extends Controller
     $agencySolution->headerTitle = $request->get('headerTitle');
     $agencySolution->headerSubtitle = $request->get('headerSubtitle');
     $agencySolution->headerBody = $request->get('headerBody');
+
     if ($request->hasFile('sectionOneIMG')) {
       $sectionOneIMG = $request->file('sectionOneIMG');
       $name = time().'.'.$sectionOneIMG->getClientOriginalExtension();
       $destinationPath = 'images';
       $agencySolution->sectionOneIMG = $sectionOneIMG->move($destinationPath, $name);
       $agencySolution->sectionOneIMG = '/'. $destinationPath . '/'. $name;;
-    }else {
-      $agencySolution->sectionOneIMG  = "none";
     }
+
     $agencySolution->discoverTitle = $request->get('discoverTitle');
     $agencySolution->discoverSubtitle = $request->get('discoverSubtitle');
     $agencySolution->discoverBody = $request->get('discoverBody');
+
     if ($request->hasFile('sectionTwoIMG')) {
       $sectionTwoIMG = $request->file('sectionTwoIMG');
       $name = time().'.'.$sectionTwoIMG->getClientOriginalExtension();
       $destinationPath = 'images';
       $agencySolution->sectionTwoIMG = $sectionTwoIMG->move($destinationPath, $name);
       $agencySolution->sectionTwoIMG = '/'. $destinationPath . '/'. $name;;
-    }else {
-      $agencySolution->sectionTwoIMG  = "none";
     }
+
     $agencySolution->attackTitle = $request->get('attackTitle');
     $agencySolution->attackSubtitle = $request->get('attackSubtitle');
     $agencySolution->attackBody = $request->get('attackBody');
+
     if ($request->hasFile('sectionThreeIMG')) {
       $sectionThreeIMG = $request->file('sectionThreeIMG');
       $name = time().'.'.$sectionThreeIMG->getClientOriginalExtension();
       $destinationPath = 'images';
       $agencySolution->sectionThreeIMG = $sectionThreeIMG->move($destinationPath, $name);
       $agencySolution->sectionThreeIMG = '/'. $destinationPath . '/'. $name;;
-    }else {
-      $agencySolution->sectionThreeIMG  = "none";
     }
+
     $agencySolution->createTitle = $request->get('createTitle');
     $agencySolution->createSubtitle = $request->get('createSubtitle');
     $agencySolution->createBody = $request->get('createBody');
-    // dd($agencySolution);
     $agencySolution->save();
 
     return redirect('/home')->with('success', 'Business Solutions Page Has Been Updated');
@@ -85,10 +84,10 @@ class AgencySolutionController extends Controller
         $agencySolution->headerIMG = $headerIMG->move($destinationPath, $headerIMGname);
         $agencySolution->headerIMG = '/'. $destinationPath . '/'. $headerIMGname;
       }
-
       $agencySolution->headerTitle = $request->get('headerTitle');
       $agencySolution->headerSubtitle = $request->get('headerSubtitle');
       $agencySolution->headerBody = $request->get('headerBody');
+
       if ($request->hasFile('sectionOneIMG')) {
         $sectionOneIMG = $request->file('sectionOneIMG');
         $sectionOneIMGname = time().'-'.$sectionOneIMG->getClientOriginalName();
@@ -99,6 +98,7 @@ class AgencySolutionController extends Controller
       $agencySolution->sectionOneTitle = $request->get('sectionOneTitle');
       $agencySolution->sectionOneSubtitle = $request->get('sectionOneSubtitle');
       $agencySolution->sectionOneBody = $request->get('sectionOneBody');
+
       if ($request->hasFile('sectionTwoIMG')) {
         $sectionTwoIMG = $request->file('sectionTwoIMG');
         $sectionTwoName = time().'-'.$sectionTwoIMG->getClientOriginalName();
@@ -109,6 +109,7 @@ class AgencySolutionController extends Controller
       $agencySolution->sectionTwoTitle = $request->get('sectionTwoTitle');
       $agencySolution->sectionTwoSubtitle = $request->get('sectionTwoSubtitle');
       $agencySolution->sectionTwoBody = $request->get('sectionTwoBody');
+
       if ($request->hasFile('sectionThreeIMG')) {
         $sectionThreeIMG = $request->file('sectionThreeIMG');
         $sectionThreeIMGname = time().'-'.$sectionThreeIMG->getClientOriginalName();
