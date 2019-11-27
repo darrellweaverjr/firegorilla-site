@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class BusinessSolution extends Model
 {
   protected $fillable = [
+    'headerIMG',
     'headerTitle',
     'headerSubtitle',
     'headerBody',

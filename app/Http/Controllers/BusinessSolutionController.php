@@ -50,13 +50,19 @@ class BusinessSolutionController extends Controller
   public function update(Request $request, $id)
   {
       $businessSolution = BusinessSolution::find($id);
-
+      if ($request->hasFile('headerIMG')) {
+        $headerIMG = $request->file('headerIMG');
+        $headerIMGname = time().'-'.$headerIMG->getClientOriginalName();
+        $destinationPath = 'images';
+        $businessSolution->headerIMG = $headerIMG->move($destinationPath, $headerIMGname);
+        $businessSolution->headerIMG = '/'. $destinationPath . '/'. $headerIMGname;
+      }
       $businessSolution->headerTitle = $request->get('headerTitle');
       $businessSolution->headerSubtitle = $request->get('headerSubtitle');
       $businessSolution->headerBody = $request->get('headerBody');
       if ($request->hasFile('sectionOneIMG')) {
         $sectionOneIMG = $request->file('sectionOneIMG');
-        $name = time().'.'.$sectionOneIMG->getClientOriginalExtension();
+        $name = time().'-'.$sectionOneIMG->getClientOriginalName();
         $destinationPath = 'images';
         $businessSolution->sectionOneIMG = $sectionOneIMG->move($destinationPath, $name);
         $businessSolution->sectionOneIMG = '/'. $destinationPath . '/'. $name;;
@@ -68,7 +74,7 @@ class BusinessSolutionController extends Controller
       $businessSolution->discoverBody = $request->get('discoverBody');
       if ($request->hasFile('sectionTwoIMG')) {
         $sectionTwoIMG = $request->file('sectionTwoIMG');
-        $name = time().'.'.$sectionTwoIMG->getClientOriginalExtension();
+        $name = time().'-'.$sectionTwoIMG->getClientOriginalName();
         $destinationPath = 'images';
         $businessSolution->sectionTwoIMG = $sectionTwoIMG->move($destinationPath, $name);
         $businessSolution->sectionTwoIMG = '/'. $destinationPath . '/'. $name;;
@@ -80,7 +86,7 @@ class BusinessSolutionController extends Controller
       $businessSolution->attackBody = $request->get('attackBody');
       if ($request->hasFile('sectionThreeIMG')) {
         $sectionThreeIMG = $request->file('sectionThreeIMG');
-        $name = time().'.'.$sectionThreeIMG->getClientOriginalExtension();
+        $name = time().'-'.$sectionThreeIMG->getClientOriginalName();
         $destinationPath = 'images';
         $businessSolution->sectionThreeIMG = $sectionThreeIMG->move($destinationPath, $name);
         $businessSolution->sectionThreeIMG = '/'. $destinationPath . '/'. $name;;

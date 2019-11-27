@@ -2,7 +2,7 @@
 
 @section('content')
 @foreach($nonProfitSolution as $nonProfitSolutions)
-<div class="non-profit-subpage-header" style="background: url('{{$nonProfitSolutions->headerIMG}}'); ; background-attachment: fixed;background-size: cover; background-position:bottom center;">
+<div class="non-profit-subpage-header" style="background: url('{{$nonProfitSolutions->headerIMG}}'); background-attachment: fixed;background-size: cover; background-position:bottom center;">
   <div class="container">
     <div class="np-solutions-headerTitle">{{$nonProfitSolutions->headerTitle}}</div>
     <div class="np-solutions-headerSubtitle">{{$nonProfitSolutions->headerSubtitle}}</div>
