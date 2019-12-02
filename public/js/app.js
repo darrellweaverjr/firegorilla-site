@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
-    // Nav Bar Animation
+    // Nav Bar AnimationRdon
     if ($(window).width() > 900) {
       if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
@@ -39,7 +39,6 @@ $(document).ready(function() {
     if (currentScrollPos >= 1620) {
       document.getElementById("create-screen-object").style.position = "absolute";
       document.getElementById("create-screen-object").style.margin = "40px 0 0 0";
-      console.log("test 1663");
     }
     prevScrollpos = currentScrollPos;
   }

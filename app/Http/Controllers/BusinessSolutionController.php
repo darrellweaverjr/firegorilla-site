@@ -66,8 +66,6 @@ class BusinessSolutionController extends Controller
         $destinationPath = 'images';
         $businessSolution->sectionOneIMG = $sectionOneIMG->move($destinationPath, $name);
         $businessSolution->sectionOneIMG = '/'. $destinationPath . '/'. $name;;
-      }else {
-        $businessSolution->sectionOneIMG  = "none";
       }
       $businessSolution->discoverTitle = $request->get('discoverTitle');
       $businessSolution->discoverSubtitle = $request->get('discoverSubtitle');
@@ -78,8 +76,6 @@ class BusinessSolutionController extends Controller
         $destinationPath = 'images';
         $businessSolution->sectionTwoIMG = $sectionTwoIMG->move($destinationPath, $name);
         $businessSolution->sectionTwoIMG = '/'. $destinationPath . '/'. $name;;
-      }else {
-        $businessSolution->sectionTwoIMG  = "none";
       }
       $businessSolution->attackTitle = $request->get('attackTitle');
       $businessSolution->attackSubtitle = $request->get('attackSubtitle');
@@ -90,8 +86,6 @@ class BusinessSolutionController extends Controller
         $destinationPath = 'images';
         $businessSolution->sectionThreeIMG = $sectionThreeIMG->move($destinationPath, $name);
         $businessSolution->sectionThreeIMG = '/'. $destinationPath . '/'. $name;;
-      }else {
-        $businessSolution->sectionThreeIMG  = "none";
       }
       $businessSolution->createTitle = $request->get('createTitle');
       $businessSolution->createSubtitle = $request->get('createSubtitle');
