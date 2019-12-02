@@ -41,7 +41,7 @@
   <script type="text/javascript" src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
-  <script src="{{ asset('js/subpages.js') }}"></script>
+  <script src="{{ asset('js/app.js') }}"></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-@extends('layouts.frontend')
+@extends('layouts.businesspage')
 
 @section('content')
 @foreach($businessSolution as $businessSolutions)
@@ -36,7 +36,6 @@
       </div>
     </div>
   </div>
-
 
 
     <div class="firegorilla-steps-grey">
