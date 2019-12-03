@@ -1,7 +1,7 @@
 @extends('layouts.subpages')
 
 @section('content')
-<div class="agency-header">
+<div class="resources-header">
   <div class="container">
     <div class="row">
       <div class="col">
