@@ -41,8 +41,8 @@
                     <div class="card-body">
                       <h4 class="card-title">Services</h4>
                         <div class="form-group row">
-                          <label for="lname" class="col-sm-3 text-right control-label col-form-label">Background Image (1920px x 800px)</label>
-                          <div class="input-group col-4">
+                          <label for="lname" class="col-md-3 text-right control-label col-form-label">Background Image (1920px x 800px)</label>
+                          <div class="input-group col-md-4">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Upload</span>
                             </div>
@@ -53,25 +53,25 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                            <label for="pageTitle" class="col-sm-3 text-right control-label col-form-label">Header Title</label>
+                            <label for="pageTitle" class="col-md-3 text-right control-label col-form-label">Header Title</label>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="pageTitle" value="{{ $servicesPage->pageTitle }}" id="pageTitle">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="serivces_title" class="col-sm-3 text-right control-label col-form-label">Services Title</label>
+                            <label for="serivces_title" class="col-md-3 text-right control-label col-form-label">Services Title</label>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="serivces_title" value="{{ $servicesPage->serivces_title }}" id="serivces_title">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="serivces_desc" class="col-sm-3 text-right control-label col-form-label">Services Description</label>
+                            <label for="serivces_desc" class="col-md-3 text-right control-label col-form-label">Services Description</label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" rows="5" name="serivces_desc" id="serivces_desc" spellcheck="true">{{ $servicesPage->serivces_desc }}</textarea>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="feature" class="col-sm-3 text-right control-label col-form-label">Services Price</label>
+                            <label for="feature" class="col-md-3 text-right control-label col-form-label">Services Price</label>
                             <div class="input-group col-sm-2">
                               <div class="input-group-prepend">
                                 <span class="input-group-text">$</span>
@@ -83,19 +83,19 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="spend_title" class="col-sm-3 text-right control-label col-form-label">Spend Title</label>
+                            <label for="spend_title" class="col-md-3 text-right control-label col-form-label">Spend Title</label>
                             <div class="col-sm-4">
                                 <input type="text" class="form-control" name="spend_title" value="{{ $servicesPage->spend_title }}" id="spend_title">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="spend_desc" class="col-sm-3 text-right control-label col-form-label">Spend Description</label>
+                            <label for="spend_desc" class="col-md-3 text-right control-label col-form-label">Spend Description</label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" rows="5" name="spend_desc" id="spend_desc" spellcheck="true">{{ $servicesPage->spend_desc }}</textarea>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="feature" class="col-sm-3 text-right control-label col-form-label">Spend Price</label>
+                            <label for="feature" class="col-md-3 text-right control-label col-form-label">Spend Price</label>
                             <div class="input-group col-sm-2">
                               <div class="input-group-prepend">
                                 <span class="input-group-text">$</span>
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="spend_title" class="col-sm-3 text-right control-label col-form-label">Call To Action</label>
+                            <label for="spend_title" class="col-md-3 text-right control-label col-form-label">Call To Action</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" value="{{ $servicesPage->pageCTA }}" name="pageCTA" id="pageCTA">
                             </div>

@@ -41,8 +41,8 @@
                     <div class="card-body">
                       <h4 class="card-title">Resources</h4>
                         <div class="form-group row">
-                            <label for="lname" class="col-sm-3 text-right control-label col-form-label">Thumbnail</label>
-                            <div class="input-group col-4">
+                            <label for="lname" class="col-md-3 text-right control-label col-form-label">Thumbnail</label>
+                            <div class="input-group col-md-4">
                               <div class="input-group-prepend">
                                   <span class="input-group-text">Upload</span>
                               </div>
@@ -53,8 +53,8 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lname" class="col-sm-3 text-right control-label col-form-label">PDF</label>
-                            <div class="input-group col-4">
+                            <label for="lname" class="col-md-3 text-right control-label col-form-label">PDF</label>
+                            <div class="input-group col-md-4">
                               <div class="input-group-prepend">
                                   <span class="input-group-text">Upload</span>
                               </div>
@@ -65,13 +65,13 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Title</label>
+                            <label for="fname" class="col-md-3 text-right control-label col-form-label">Title</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control"  name="resourcesTitle" id="resourcesTitle" placeholder="Title" value="{{ $resources->resourcesTitle }}">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email1" class="col-sm-3 text-right control-label col-form-label">Description</label>
+                            <label for="email1" class="col-md-3 text-right control-label col-form-label">Description</label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" rows="5" name="resourcesDesc" id="resourcesDesc" spellcheck="false">{{ $resources->resourcesDesc }}</textarea>
                             </div>

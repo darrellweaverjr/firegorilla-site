@@ -41,7 +41,7 @@
                     <div class="card-body">
                       <h4 class="card-title">Services</h4>
                         <div class="form-group row">
-                          <label for="featuresCategory" class="col-sm-3 text-right control-label col-form-label">Category</label>
+                          <label for="featuresCategory" class="col-md-3 text-right control-label col-form-label">Category</label>
                           <div class="col-md-3">
                             <select class="form-control" name="featuresCategory" id="featuresCategory">
                               @if ($services->featuresCategory=="Agency Services")
@@ -55,13 +55,13 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                            <label for="feature" class="col-sm-3 text-right control-label col-form-label">Features Description</label>
+                            <label for="feature" class="col-md-3 text-right control-label col-form-label">Features Description</label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" rows="5" name="feature" id="feature" spellcheck="false">{{$services->feature}}</textarea>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-3 text-right control-label">Avaiable in</label>
+                            <label class="col-md-3 text-right control-label">Avaiable in</label>
                             <div class="col-md-2">
                               <div class="custom-control custom-checkbox">
                                   <input type="checkbox" value="1" class="custom-control-input sl-all" name="agencyServices" id="agencyServices" @if ($services->agencyServices==1) checked @endif >

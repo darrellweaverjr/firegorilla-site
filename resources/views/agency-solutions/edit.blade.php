@@ -41,8 +41,8 @@
                     <div class="card-body">
                         <h4 class="card-title">Hero</h4>
                         <div class="form-group row">
-                          <label for="lname" class="col-sm-3 text-right control-label col-form-label">Background Image (1920px x 800px)</label>
-                          <div class="input-group col-4">
+                          <label for="lname" class="col-md-3 text-right control-label col-form-label">Background Image (1920px x 800px)</label>
+                          <div class="input-group col-md-4">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Upload</span>
                             </div>
@@ -53,19 +53,19 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Title</label>
+                            <label for="fname" class="col-md-3 text-right control-label col-form-label">Title</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" value="{{$agencySolution->headerTitle}}" name="headerTitle" id="headerTitle" placeholder="Title">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lname" class="col-sm-3 text-right control-label col-form-label">Subtitle</label>
+                            <label for="lname" class="col-md-3 text-right control-label col-form-label">Subtitle</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" value="{{$agencySolution->headerSubtitle}}" name="headerSubtitle" id="headerSubtitle" placeholder="Subtitle">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email1" class="col-sm-3 text-right control-label col-form-label">Hero Description</label>
+                            <label for="email1" class="col-md-3 text-right control-label col-form-label">Hero Description</label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" rows="5" name="headerBody" id="headerBody" spellcheck="false">{{$agencySolution->headerBody}}</textarea>
                             </div>
@@ -75,8 +75,8 @@
                     <div class="card-body">
                       <h4 class="card-title">Section 1</h4>
                         <div class="form-group row">
-                          <label for="lname" class="col-sm-3 text-right control-label col-form-label">Image (540px x 405px)</label>
-                          <div class="input-group col-4">
+                          <label for="lname" class="col-md-3 text-right control-label col-form-label">Image (540px x 405px)</label>
+                          <div class="input-group col-md-4">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Upload</span>
                             </div>
@@ -87,19 +87,19 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Title</label>
+                            <label for="fname" class="col-md-3 text-right control-label col-form-label">Title</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" value="{{$agencySolution->sectionOneTitle}}" name="sectionOneTitle" id="sectionOneTitle" placeholder="Title">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lname" class="col-sm-3 text-right control-label col-form-label">Subtitle</label>
+                            <label for="lname" class="col-md-3 text-right control-label col-form-label">Subtitle</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" value="{{$agencySolution->sectionOneSubtitle}}" name="sectionOneSubtitle" id="sectionOneSubtitle" placeholder="Subtitle">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email1" class="col-sm-3 text-right control-label col-form-label">Paragraph Text</label>
+                            <label for="email1" class="col-md-3 text-right control-label col-form-label">Paragraph Text</label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" rows="5" name="sectionOneBody" id="sectionOneBody" spellcheck="false">{{$agencySolution->sectionOneBody}}</textarea>
                             </div>
@@ -109,8 +109,8 @@
                     <div class="card-body">
                       <h4 class="card-title">Section 2</h4>
                         <div class="form-group row">
-                          <label for="lname" class="col-sm-3 text-right control-label col-form-label">Image (540px x 405px)</label>
-                          <div class="input-group col-4">
+                          <label for="lname" class="col-md-3 text-right control-label col-form-label">Image (540px x 405px)</label>
+                          <div class="input-group col-md-4">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Upload</span>
                             </div>
@@ -121,19 +121,19 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Title</label>
+                            <label for="fname" class="col-md-3 text-right control-label col-form-label">Title</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" value="{{$agencySolution->sectionTwoTitle}}" name="sectionTwoTitle" id="sectionTwoTitle" placeholder="Title">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lname" class="col-sm-3 text-right control-label col-form-label">Subtitle</label>
+                            <label for="lname" class="col-md-3 text-right control-label col-form-label">Subtitle</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" value="{{$agencySolution->sectionTwoSubtitle}}" name="sectionTwoSubtitle" id="sectionTwoSubtitle" placeholder="Subtitle">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email1" class="col-sm-3 text-right control-label col-form-label">Paragraph Text</label>
+                            <label for="email1" class="col-md-3 text-right control-label col-form-label">Paragraph Text</label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" rows="5" name="sectionTwoBody" id="sectionTwoBody" spellcheck="false">{{$agencySolution->sectionTwoBody}}</textarea>
                             </div>
@@ -143,8 +143,8 @@
                     <div class="card-body">
                       <h4 class="card-title">Section 3</h4>
                         <div class="form-group row">
-                          <label for="lname" class="col-sm-3 text-right control-label col-form-label">Image (540px x 405px)</label>
-                          <div class="input-group col-4">
+                          <label for="lname" class="col-md-3 text-right control-label col-form-label">Image (540px x 405px)</label>
+                          <div class="input-group col-md-4">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">Upload</span>
                             </div>
@@ -155,19 +155,19 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                            <label for="fname" class="col-sm-3 text-right control-label col-form-label">Title</label>
+                            <label for="fname" class="col-md-3 text-right control-label col-form-label">Title</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" value="{{$agencySolution->sectionThreeTitle}}"  name="sectionThreeTitle" id="sectionThreeTitle" placeholder="Title">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lname" class="col-sm-3 text-right control-label col-form-label">Subtitle</label>
+                            <label for="lname" class="col-md-3 text-right control-label col-form-label">Subtitle</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" value="{{$agencySolution->sectionThreeSubtitle}}"  name="sectionThreeSubtitle" id="sectionThreeSubtitle" placeholder="Subtitle">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email1" class="col-sm-3 text-right control-label col-form-label">Paragraph Text</label>
+                            <label for="email1" class="col-md-3 text-right control-label col-form-label">Paragraph Text</label>
                             <div class="col-sm-9">
                                 <textarea class="form-control" rows="5" name="sectionThreeBody" id="sectionThreeBody" spellcheck="false">{{$agencySolution->sectionThreeBody}}</textarea>
                             </div>

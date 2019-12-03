@@ -798,6 +798,9 @@ body{
 .col-desktop{
   display: block;
 }
+.mobile-services{
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .col-mobi{
     display: block;
@@ -998,6 +1001,12 @@ body{
   }
 }
 @media screen and (max-width: 480px) {
+  .agency-tables{
+    display: none;
+  }
+  .mobile-services{
+    display: block;
+  }
   .solutions-sect {
     padding: 100px 0;
     width: 100%;
