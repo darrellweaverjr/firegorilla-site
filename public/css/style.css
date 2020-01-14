@@ -801,7 +801,38 @@ body{
 .mobile-services{
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
+  .navigation ul {
+    padding: 20px 5px;
+    margin: 0;
+    display: block;
+  }
+  .navigation li {
+    display: inline;
+    margin: 20px 20px 0 0;
+    padding: 23px 0;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .logo {
+    width: 180px;
+    margin: 10px 10px 10px 60px;
+    float: left;
+  }
+  .header-object-2 {
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+  }
+  .navigation{
+    display: none;
+  }
+  .join-navi{
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
   .col-mobi{
     display: block;
     padding: 10px;
@@ -919,7 +950,7 @@ body{
     margin: 10px 10px 10px 60px;
     float: left;
   }
-  .header-object-2 {
+  /* .header-object-2 {
     display: none;
   }
   .mobile-nav{
@@ -930,7 +961,7 @@ body{
   }
   .join-navi{
     display: none;
-  }
+  } */
   #header-screen-object, #discover-screen-object, #attack-screen-object, #create-screen-object {
     display: none;
   }

@@ -7,7 +7,7 @@ $(document).ready(function() {
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     // Nav Bar AnimationRdon
-    if ($(window).width() > 900) {
+    if ($(window).width() > 1200) {
       if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
       } else {
