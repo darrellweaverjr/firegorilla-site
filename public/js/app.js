@@ -4,8 +4,12 @@ $(document).ready(function() {
 
   var prevScrollpos = window.pageYOffset;
 
+  /*
+
   window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
+
+    console.log(currentScrollPos);
     // Nav Bar AnimationRdon
     if ($(window).width() > 1200) {
       if (prevScrollpos > currentScrollPos) {
@@ -17,10 +21,10 @@ $(document).ready(function() {
       document.getElementById("navbar").style.top = "0";
     }
     // Attachk Screen Section 2
-    if (currentScrollPos >= 633) {
+    if (currentScrollPos >= 366) {
       document.getElementById("attack-screen-object").style.position = "fixed";
       document.getElementById("attack-screen-object").style.margin = "-1030px 0 0 0";
-    } else if (currentScrollPos <= 634) {
+    } else if (currentScrollPos <= 367) {
       document.getElementById("attack-screen-object").style.position = "relative";
       document.getElementById("attack-screen-object").style.margin = "-395px 0 0 0";
     }
@@ -42,5 +46,7 @@ $(document).ready(function() {
     }
     prevScrollpos = currentScrollPos;
   }
+
+  */
 
 });

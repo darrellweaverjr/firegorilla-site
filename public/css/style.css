@@ -208,7 +208,7 @@ body{
   transform: rotateX(53deg) rotateY(1deg) rotateZ(43deg);
   box-shadow: 25px 25px rgba(0, 0, 0, 0.2);
   -webkit-transition: top 2s; /* For Safari 3.1 to 6.0 */
-  margin: 20px 0 0 0;
+  margin: 100px 0 0 0;
   z-index: 98;
 }
 .discover-screen img{
@@ -218,7 +218,7 @@ body{
   width: 533px;
   transform: rotateX(53deg) rotateY(1deg) rotateZ(43deg);
   box-shadow: 25px 25px rgba(0, 0, 0, 0.2);
-  margin: 20px 0 0 0;
+  margin: 100px 0 0 0;
   z-index: 97;
 }
 .attack-screen img{
@@ -228,7 +228,7 @@ body{
   width: 533px;
   transform: rotateX(53deg) rotateY(1deg) rotateZ(43deg);
   box-shadow: 25px 25px rgba(0, 0, 0, 0.2);
-  margin: 20px 0 0 0;
+  margin: 100px 0 0 0;
   z-index: 96;
 }
 .create-screen img{
@@ -240,14 +240,14 @@ body{
   /* margin: 220px 0 0 0; */
 }
 #attack-screen-object {
-  position:fixed;
-  /* top:440px; */
-  /* margin: 240px 0 0 0; */
+  position:relative;
+  /* top:440px;
+  margin: 240px 0 0 0; */
 }
 #create-screen-object {
-  position:fixed;
-  /* top:460px; */
-  /* margin: 260px 0 0 0; */
+  position:relative;
+  /* top:460px;
+  margin: 260px 0 0 0; */
 }
 .number-count {
   border-radius: 360px;
