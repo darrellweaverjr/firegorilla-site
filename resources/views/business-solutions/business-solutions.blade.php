@@ -2,37 +2,40 @@
 
 @section('content')
 @foreach($businessSolution as $businessSolutions)
-<div class="header" style="background: url('{{$businessSolutions->headerIMG}}'); background-attachment: fixed; background-size: cover; background-position:top center;">
-  <div class="container">
-    <div class="np-solutions-headerTitle">{{$businessSolutions->headerTitle}}</div>
-    <div class="np-solutions-headerSubtitle">{{$businessSolutions->headerSubtitle}}</div>
-    <!-- <div class="attract-txt">
-      {{$businessSolutions->headerBody}}
-    </div> -->
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="campaign-type">
-      We Have Campaigns To Help Your Business!
+  <div class="header" style="background: url('{{$businessSolutions->headerIMG}}'); background-attachment: fixed; background-size: cover; background-position:top center;">
+    <div class="container">
+      <div class="np-solutions-headerTitle">{{$businessSolutions->headerTitle}}</div>
+      <div class="np-solutions-headerSubtitle">{{$businessSolutions->headerSubtitle}}</div>
+      <!-- <div class="attract-txt">
+        {{$businessSolutions->headerBody}}
+      </div> -->
     </div>
   </div>
-  <div class="row">
-    <div class="business-name-sect">
-      <form action="/signup" class="form-inline">
-        <div class="business-type-menu">
-          <select class="custom-select">
-            <option selected>Business Type</option>
-            <option value="Nightlife">Nightlife</option>
-            <option value="Restaurant">Restaurant</option>
-            <option value="Hospitality">Hospitality</option>
-          </select>
+  
+  <div class="we-have-campaigns">
+    <div class="container">
+      <div class="row">
+        <div class="campaign-type">
+          We Have Campaigns To Help Your Business!
         </div>
-        <button type="submit" class="btn btn-danger"><i class="fas fa-chevron-right"></i></button>
-      </form>
+      </div>
+      <div class="row">
+        <div class="business-name-sect">
+          <form action="/signup" class="form-inline">
+            <div class="business-type-menu">
+              <select class="custom-select">
+                <option selected>Business Type</option>
+                <option value="Nightlife">Nightlife</option>
+                <option value="Restaurant">Restaurant</option>
+                <option value="Hospitality">Hospitality</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-danger"><i class="fas fa-chevron-right"></i></button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
   <div class="firegorilla-steps-white">
     <div class="container">

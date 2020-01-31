@@ -100,7 +100,7 @@ body{
 }
 .header{
   padding: 250px 0;
-  margin: 50px 0;
+  margin: 50px 0 0 0 ;
   color: #fff;
 }
 .header-sub-txt {
@@ -110,6 +110,10 @@ body{
   color: #fff;
   padding: 0 0 20px 0;
   font-weight: bold;
+}
+.we-have-campaigns{
+  padding: 60px 0;
+  background-color:#f7f7f7;
 }
 .logo{
   width:180px;
@@ -816,11 +820,8 @@ body{
   padding: 10px 10px 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  color: #FF512F;
+  color: #000;
   font-size: 24px;
-  background: -webkit-linear-gradient(#DD2476, #FF512F);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   line-height: 28px;
 }
 .member-info {
