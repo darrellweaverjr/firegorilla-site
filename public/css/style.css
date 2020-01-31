@@ -100,7 +100,7 @@ body{
 }
 .header{
   padding: 250px 0;
-  margin: 50px 0 0 0;
+  margin: 50px 0;
   color: #fff;
 }
 .header-sub-txt {
@@ -800,6 +800,37 @@ body{
 }
 .mobile-services{
   display: none;
+}
+.business-type-menu{
+  margin: 0 10px;
+  float:left;
+}
+.business-name-sect{
+  text-align: center;
+  overflow: auto;
+  margin:auto;
+}
+.campaign-type{
+  width:100%;
+  text-align: center;
+  padding: 10px 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #FF512F;
+  font-size: 24px;
+  background: -webkit-linear-gradient(#DD2476, #FF512F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 28px;
+}
+.member-info {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  color: #E91E63;
+  margin: 0 0 20px 0;
 }
 @media screen and (max-width: 1300px) {
   .navigation ul {

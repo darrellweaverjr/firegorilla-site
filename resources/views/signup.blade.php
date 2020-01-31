@@ -16,7 +16,7 @@
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <div class="signup-section">
-          <div class="solution-title"><b>GET YOUR FREE ACCOUNT NOW</b> MAKE BETTER CAMPAIGNS WITH EASE THAT SAVE YOU MONEY.</div>
+          <div class="solution-title"><b>GET YOUR FREE CONSULTATION NOW</b> MAKE BETTER CAMPAIGNS WITH EASE THAT SAVE YOU MONEY.</div>
             <!-- <div class="solution-txt">
               <b>READY.</b> ATTRACT MORE PAYING CUSTOMERS.<br/>
               <b>AIM.</b> TARGET THE RIGHT PEOPLE FOR YOUR BUSINESS.<br/>
@@ -64,8 +64,9 @@
             </form>
 
             <div class="agency-button">
-              <button type="button" class="btn btn-gradient btn-fg-lg btn-block">start free trial</button>
+              <button type="button" class="btn btn-gradient btn-fg-lg btn-block">Get Your Consultation</button>
             </div>
+            <div class="member-info">One of our team members will be in contact with you shortly...</div>
           </div>
       </div>
     </div>
